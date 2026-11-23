@@ -1,0 +1,454 @@
+{
+  "schemaVersion": 1,
+  "partyCount": 43,
+  "scope": "EXCLUSIVE_CORE_FOOTHOLDS",
+  "initialStrengthPolicy": "PARTY_STRENGTH_DATASET",
+  "regionOrderHasStrengthMeaning": false,
+  "absenceMeansUnavailable": true,
+  "notes": [
+    "Core stronghold regions are the exclusive states and Union Territories where a party is permitted to contest in this game.",
+    "There are no secondary foothold regions. If a region is absent from a party list, that party is not eligible to contest there.",
+    "Regional party strength is stored separately in party-strength-by-region.json and does not grant geographical eligibility.",
+    "Alliance membership never expands a party’s geographical eligibility."
+  ],
+  "parties": [
+    {
+      "partyId": "BJP",
+      "partyName": "Bharatiya Janata Party",
+      "coreFootholdRegions": [
+        "Gujarat",
+        "Rajasthan",
+        "Madhya Pradesh",
+        "Uttar Pradesh",
+        "Uttarakhand",
+        "Himachal Pradesh",
+        "Haryana",
+        "Maharashtra",
+        "Delhi",
+        "Goa",
+        "Karnataka",
+        "Assam",
+        "Arunachal Pradesh",
+        "Tripura",
+        "Manipur",
+        "Chhattisgarh",
+        "Jharkhand",
+        "Odisha",
+        "Bihar",
+        "West Bengal",
+        "Telangana",
+        "Andhra Pradesh",
+        "Jammu & Kashmir",
+        "Ladakh",
+        "Dadra & Nagar Haveli and Daman & Diu",
+        "Chandigarh",
+        "Kerala",
+        "Meghalaya",
+        "Mizoram",
+        "Nagaland",
+        "Punjab",
+        "Sikkim",
+        "Tamil Nadu",
+        "Andaman & Nicobar Islands",
+        "Lakshadweep",
+        "Puducherry"
+      ],
+      "initialStrength": "EQUAL"
+    },
+    {
+      "partyId": "INC",
+      "partyName": "Indian National Congress",
+      "coreFootholdRegions": [
+        "Kerala",
+        "Karnataka",
+        "Telangana",
+        "Himachal Pradesh",
+        "Haryana",
+        "Punjab",
+        "Rajasthan",
+        "Chhattisgarh",
+        "Madhya Pradesh",
+        "Maharashtra",
+        "Gujarat",
+        "Goa",
+        "Assam",
+        "Manipur",
+        "Meghalaya",
+        "Nagaland",
+        "Mizoram",
+        "Tripura",
+        "West Bengal",
+        "Jharkhand",
+        "Bihar",
+        "Odisha",
+        "Uttar Pradesh",
+        "Jammu & Kashmir",
+        "Tamil Nadu",
+        "Puducherry",
+        "Lakshadweep",
+        "Andaman & Nicobar Islands",
+        "Andhra Pradesh",
+        "Arunachal Pradesh",
+        "Sikkim",
+        "Uttarakhand",
+        "Chandigarh",
+        "Dadra & Nagar Haveli and Daman & Diu",
+        "Delhi",
+        "Ladakh"
+      ],
+      "initialStrength": "EQUAL"
+    },
+    {
+      "partyId": "CPI",
+      "partyName": "Communist Party of India",
+      "coreFootholdRegions": [
+        "Kerala",
+        "Tamil Nadu",
+        "Andhra Pradesh",
+        "Telangana",
+        "West Bengal",
+        "Bihar",
+        "Jharkhand",
+        "Odisha",
+        "Manipur"
+      ],
+      "initialStrength": "EQUAL"
+    },
+    {
+      "partyId": "CPM",
+      "partyName": "Communist Party of India (Marxist)",
+      "coreFootholdRegions": [
+        "Kerala",
+        "Tripura",
+        "Tamil Nadu",
+        "West Bengal",
+        "Rajasthan",
+        "Telangana",
+        "Andhra Pradesh",
+        "Maharashtra",
+        "Bihar",
+        "Jharkhand"
+      ],
+      "initialStrength": "EQUAL"
+    },
+    {
+      "partyId": "TDP",
+      "partyName": "Telugu Desam Party",
+      "coreFootholdRegions": [
+        "Andhra Pradesh",
+        "Telangana"
+      ],
+      "initialStrength": "EQUAL"
+    },
+    {
+      "partyId": "YSRCP",
+      "partyName": "Yuvajana Sramika Rythu Congress Party",
+      "coreFootholdRegions": [
+        "Andhra Pradesh"
+      ],
+      "initialStrength": "EQUAL"
+    },
+    {
+      "partyId": "JSP",
+      "partyName": "Janasena Party",
+      "coreFootholdRegions": [
+        "Andhra Pradesh"
+      ],
+      "initialStrength": "EQUAL"
+    },
+    {
+      "partyId": "BRS",
+      "partyName": "Bharat Rashtra Samithi",
+      "coreFootholdRegions": [
+        "Telangana"
+      ],
+      "initialStrength": "EQUAL"
+    },
+    {
+      "partyId": "AIMIM",
+      "partyName": "All India Majlis-e-Ittehadul Muslimeen",
+      "coreFootholdRegions": [
+        "Telangana"
+      ],
+      "initialStrength": "EQUAL"
+    },
+    {
+      "partyId": "DMK",
+      "partyName": "Dravida Munnetra Kazhagam",
+      "coreFootholdRegions": [
+        "Tamil Nadu",
+        "Puducherry"
+      ],
+      "initialStrength": "EQUAL"
+    },
+    {
+      "partyId": "AIADMK",
+      "partyName": "All India Anna Dravida Munnetra Kazhagam",
+      "coreFootholdRegions": [
+        "Tamil Nadu"
+      ],
+      "initialStrength": "EQUAL"
+    },
+    {
+      "partyId": "PMK",
+      "partyName": "Pattali Makkal Katchi",
+      "coreFootholdRegions": [
+        "Tamil Nadu"
+      ],
+      "initialStrength": "EQUAL"
+    },
+    {
+      "partyId": "NTK",
+      "partyName": "Naam Tamilar Katchi",
+      "coreFootholdRegions": [
+        "Tamil Nadu"
+      ],
+      "initialStrength": "EQUAL"
+    },
+    {
+      "partyId": "IUML",
+      "partyName": "Indian Union Muslim League",
+      "coreFootholdRegions": [
+        "Kerala"
+      ],
+      "initialStrength": "EQUAL"
+    },
+    {
+      "partyId": "JD(S)",
+      "partyName": "Janata Dal (Secular)",
+      "coreFootholdRegions": [
+        "Karnataka"
+      ],
+      "initialStrength": "EQUAL"
+    },
+    {
+      "partyId": "SHS",
+      "partyName": "Shiv Sena",
+      "coreFootholdRegions": [
+        "Maharashtra"
+      ],
+      "initialStrength": "EQUAL"
+    },
+    {
+      "partyId": "NCP",
+      "partyName": "Nationalist Congress Party",
+      "coreFootholdRegions": [
+        "Maharashtra"
+      ],
+      "initialStrength": "EQUAL"
+    },
+    {
+      "partyId": "SSUBT",
+      "partyName": "Shiv Sena (Uddhav Balasaheb Thackeray)",
+      "coreFootholdRegions": [
+        "Maharashtra"
+      ],
+      "initialStrength": "EQUAL"
+    },
+    {
+      "partyId": "NCP-SP",
+      "partyName": "Nationalist Congress Party – Sharadchandra Pawar",
+      "coreFootholdRegions": [
+        "Maharashtra"
+      ],
+      "initialStrength": "EQUAL"
+    },
+    {
+      "partyId": "SP",
+      "partyName": "Samajwadi Party",
+      "coreFootholdRegions": [
+        "Uttar Pradesh"
+      ],
+      "initialStrength": "EQUAL"
+    },
+    {
+      "partyId": "BSP",
+      "partyName": "Bahujan Samaj Party",
+      "coreFootholdRegions": [
+        "Uttar Pradesh"
+      ],
+      "initialStrength": "EQUAL"
+    },
+    {
+      "partyId": "RLD",
+      "partyName": "Rashtriya Lok Dal",
+      "coreFootholdRegions": [
+        "Uttar Pradesh"
+      ],
+      "initialStrength": "EQUAL"
+    },
+    {
+      "partyId": "AITC",
+      "partyName": "All India Trinamool Congress",
+      "coreFootholdRegions": [
+        "West Bengal"
+      ],
+      "initialStrength": "EQUAL"
+    },
+    {
+      "partyId": "BJD",
+      "partyName": "Biju Janata Dal",
+      "coreFootholdRegions": [
+        "Odisha"
+      ],
+      "initialStrength": "EQUAL"
+    },
+    {
+      "partyId": "RJD",
+      "partyName": "Rashtriya Janata Dal",
+      "coreFootholdRegions": [
+        "Bihar"
+      ],
+      "initialStrength": "EQUAL"
+    },
+    {
+      "partyId": "JD(U)",
+      "partyName": "Janata Dal (United)",
+      "coreFootholdRegions": [
+        "Bihar"
+      ],
+      "initialStrength": "EQUAL"
+    },
+    {
+      "partyId": "LJP",
+      "partyName": "Lok Janshakti Party",
+      "coreFootholdRegions": [
+        "Bihar"
+      ],
+      "initialStrength": "EQUAL"
+    },
+    {
+      "partyId": "JMM",
+      "partyName": "Jharkhand Mukti Morcha",
+      "coreFootholdRegions": [
+        "Jharkhand"
+      ],
+      "initialStrength": "EQUAL"
+    },
+    {
+      "partyId": "AJSU",
+      "partyName": "All Jharkhand Students Union",
+      "coreFootholdRegions": [
+        "Jharkhand"
+      ],
+      "initialStrength": "EQUAL"
+    },
+    {
+      "partyId": "AAP",
+      "partyName": "Aam Aadmi Party",
+      "coreFootholdRegions": [
+        "Delhi",
+        "Punjab",
+        "Gujarat",
+        "Goa"
+      ],
+      "initialStrength": "EQUAL"
+    },
+    {
+      "partyId": "SAD",
+      "partyName": "Shiromani Akali Dal",
+      "coreFootholdRegions": [
+        "Punjab"
+      ],
+      "initialStrength": "EQUAL"
+    },
+    {
+      "partyId": "AGP",
+      "partyName": "Asom Gana Parishad",
+      "coreFootholdRegions": [
+        "Assam"
+      ],
+      "initialStrength": "EQUAL"
+    },
+    {
+      "partyId": "AIUDF",
+      "partyName": "All India United Democratic Front",
+      "coreFootholdRegions": [
+        "Assam"
+      ],
+      "initialStrength": "EQUAL"
+    },
+    {
+      "partyId": "ZPM",
+      "partyName": "Zoram People's Movement",
+      "coreFootholdRegions": [
+        "Mizoram"
+      ],
+      "initialStrength": "EQUAL"
+    },
+    {
+      "partyId": "MNF",
+      "partyName": "Mizo National Front",
+      "coreFootholdRegions": [
+        "Mizoram"
+      ],
+      "initialStrength": "EQUAL"
+    },
+    {
+      "partyId": "NPF",
+      "partyName": "Naga People's Front",
+      "coreFootholdRegions": [
+        "Nagaland"
+      ],
+      "initialStrength": "EQUAL"
+    },
+    {
+      "partyId": "NPP",
+      "partyName": "National People's Party",
+      "coreFootholdRegions": [
+        "Meghalaya",
+        "Manipur",
+        "Arunachal Pradesh"
+      ],
+      "initialStrength": "EQUAL"
+    },
+    {
+      "partyId": "TIPRA",
+      "partyName": "Tipra Motha Party",
+      "coreFootholdRegions": [
+        "Tripura"
+      ],
+      "initialStrength": "EQUAL"
+    },
+    {
+      "partyId": "JKNC",
+      "partyName": "Jammu & Kashmir National Conference",
+      "coreFootholdRegions": [
+        "Jammu & Kashmir"
+      ],
+      "initialStrength": "EQUAL"
+    },
+    {
+      "partyId": "PDP",
+      "partyName": "Jammu and Kashmir Peoples Democratic Party",
+      "coreFootholdRegions": [
+        "Jammu & Kashmir"
+      ],
+      "initialStrength": "EQUAL"
+    },
+    {
+      "partyId": "SKM",
+      "partyName": "Sikkim Krantikari Morcha",
+      "coreFootholdRegions": [
+        "Sikkim"
+      ],
+      "initialStrength": "EQUAL"
+    },
+    {
+      "partyId": "SDF",
+      "partyName": "Sikkim Democratic Front",
+      "coreFootholdRegions": [
+        "Sikkim"
+      ],
+      "initialStrength": "EQUAL"
+    },
+    {
+      "partyId": "AINRC",
+      "partyName": "All India N.R. Congress",
+      "coreFootholdRegions": [
+        "Puducherry"
+      ],
+      "initialStrength": "EQUAL"
+    }
+  ]
+}

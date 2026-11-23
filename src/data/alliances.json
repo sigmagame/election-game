@@ -1,0 +1,43 @@
+
+{
+  "alliances": [
+    {
+      "id": "NDA",
+      "name": "National Democratic Alliance",
+      "type": "PREDEFINED",
+      "membershipType": "EDITABLE",
+      "corePartyIds": [
+        "BJP",
+        "AJSU",
+        "AIADMK",
+        "SAD",
+        "SHS",
+        "NPP",
+        "NPF",
+        "AGP",
+        "LJP",
+        "PMK",
+        "SKM"
+      ]
+    },
+    {
+      "id": "INDIA",
+      "name": "Indian National Developmental Inclusive Alliance",
+      "type": "PREDEFINED",
+      "membershipType": "EDITABLE",
+      "corePartyIds": [
+        "INC",
+        "AITC",
+        "SP",
+        "RJD",
+        "CPM",
+        "CPI",
+        "JMM",
+        "SSUBT",
+        "NCP-SP",
+        "JKNC",
+        "IUML"
+      ]
+    }
+  ]
+}

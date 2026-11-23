@@ -1,0 +1,372 @@
+{
+  "governmentType": "UNION",
+  "governmentName": "Union Government",
+  "totalMinistries": 46,
+  "source": "Updated Lok Sabha Union Government Cabinet List.txt",
+  "categories": [
+    {
+      "id": "key",
+      "name": "Key ministries (8 points each)",
+      "ministries": [
+        {
+          "id": 1,
+          "name": "Home Affairs",
+          "tier": "KEY"
+        },
+        {
+          "id": 2,
+          "name": "Finance",
+          "tier": "KEY"
+        },
+        {
+          "id": 3,
+          "name": "Defence",
+          "tier": "KEY"
+        },
+        {
+          "id": 4,
+          "name": "External Affairs",
+          "tier": "KEY"
+        },
+        {
+          "id": 5,
+          "name": "Personnel and Public Grievances",
+          "tier": "KEY"
+        },
+        {
+          "id": 6,
+          "name": "Coal",
+          "tier": "KEY"
+        },
+        {
+          "id": 7,
+          "name": "Mines",
+          "tier": "KEY"
+        },
+        {
+          "id": 8,
+          "name": "Commerce and Industry",
+          "tier": "KEY"
+        },
+        {
+          "id": 9,
+          "name": "Railways",
+          "tier": "KEY"
+        },
+        {
+          "id": 10,
+          "name": "Road Transport and Highways",
+          "tier": "KEY"
+        },
+        {
+          "id": 55,
+          "name": "Home Affairs — Minister of State",
+          "role": "REGULAR_MOS",
+          "parentMinistryId": 1
+        },
+        {
+          "id": 56,
+          "name": "Finance — Minister of State",
+          "role": "REGULAR_MOS",
+          "parentMinistryId": 2
+        },
+        {
+          "id": 60,
+          "name": "Railways — Minister of State",
+          "role": "REGULAR_MOS",
+          "parentMinistryId": 9
+        },
+        {
+          "id": 61,
+          "name": "Road Transport and Highways — Minister of State",
+          "role": "REGULAR_MOS",
+          "parentMinistryId": 10
+        },
+        {
+          "id": 62,
+          "name": "Commerce and Industry — Minister of State",
+          "role": "REGULAR_MOS",
+          "parentMinistryId": 8
+        }
+      ]
+    },
+    {
+      "id": "big",
+      "name": "Big ministries (4 points each)",
+      "ministries": [
+        {
+          "id": 11,
+          "name": "Civil Aviation",
+          "tier": "BIG"
+        },
+        {
+          "id": 12,
+          "name": "Ports, Shipping and Waterways",
+          "tier": "BIG"
+        },
+        {
+          "id": 13,
+          "name": "Petroleum and Natural Gas",
+          "tier": "BIG"
+        },
+        {
+          "id": 14,
+          "name": "Power",
+          "tier": "BIG"
+        },
+        {
+          "id": 15,
+          "name": "New and Renewable Energy",
+          "tier": "BIG"
+        },
+        {
+          "id": 16,
+          "name": "Communications",
+          "tier": "BIG"
+        },
+        {
+          "id": 17,
+          "name": "Electronics and Information Technology",
+          "tier": "BIG"
+        },
+        {
+          "id": 18,
+          "name": "Housing and Urban Affairs",
+          "tier": "BIG"
+        },
+        {
+          "id": 19,
+          "name": "Education",
+          "tier": "BIG"
+        },
+        {
+          "id": 20,
+          "name": "Health and Family Welfare",
+          "tier": "BIG"
+        },
+        {
+          "id": 21,
+          "name": "Agriculture and Farmers' Welfare",
+          "tier": "BIG"
+        },
+        {
+          "id": 22,
+          "name": "Rural Development",
+          "tier": "BIG"
+        },
+        {
+          "id": 23,
+          "name": "Labour and Employment",
+          "tier": "BIG"
+        },
+        {
+          "id": 24,
+          "name": "Women and Child Development",
+          "tier": "BIG"
+        },
+        {
+          "id": 25,
+          "name": "Social Justice and Empowerment",
+          "tier": "BIG"
+        },
+        {
+          "id": 26,
+          "name": "Consumer Affairs, Food and Public Distribution",
+          "tier": "BIG"
+        },
+        {
+          "id": 27,
+          "name": "Environment, Forest and Climate Change",
+          "tier": "BIG"
+        },
+        {
+          "id": 28,
+          "name": "Jal Shakti",
+          "tier": "BIG"
+        },
+        {
+          "id": 29,
+          "name": "Corporate Affairs",
+          "tier": "BIG"
+        },
+        {
+          "id": 30,
+          "name": "Chemicals and Fertilizers",
+          "tier": "BIG"
+        },
+        {
+          "id": 31,
+          "name": "Heavy Industries",
+          "tier": "BIG"
+        },
+        {
+          "id": 32,
+          "name": "Steel",
+          "tier": "BIG"
+        },
+        {
+          "id": 33,
+          "name": "Micro, Small and Medium Enterprises (MSME)",
+          "tier": "BIG"
+        },
+        {
+          "id": 34,
+          "name": "Cooperation",
+          "tier": "BIG"
+        },
+        {
+          "id": 57,
+          "name": "Agriculture and Farmers' Welfare — Minister of State",
+          "role": "REGULAR_MOS",
+          "parentMinistryId": 21
+        },
+        {
+          "id": 58,
+          "name": "Education — Minister of State",
+          "role": "REGULAR_MOS",
+          "parentMinistryId": 19
+        },
+        {
+          "id": 59,
+          "name": "Health and Family Welfare — Minister of State",
+          "role": "REGULAR_MOS",
+          "parentMinistryId": 20
+        }
+      ]
+    },
+    {
+      "id": "small",
+      "name": "Small ministries (3 points each)",
+      "ministries": [
+        {
+          "id": 35,
+          "name": "Parliamentary Affairs",
+          "tier": "SMALL"
+        },
+        {
+          "id": 36,
+          "name": "Panchayati Raj",
+          "tier": "SMALL"
+        },
+        {
+          "id": 37,
+          "name": "Fisheries, Animal Husbandry and Dairying",
+          "tier": "SMALL"
+        },
+        {
+          "id": 38,
+          "name": "Tribal Affairs",
+          "tier": "SMALL"
+        },
+        {
+          "id": 39,
+          "name": "Minority Affairs",
+          "tier": "SMALL"
+        },
+        {
+          "id": 40,
+          "name": "Textiles",
+          "tier": "SMALL"
+        },
+        {
+          "id": 41,
+          "name": "Food Processing Industries",
+          "tier": "SMALL"
+        },
+        {
+          "id": 42,
+          "name": "Information and Broadcasting",
+          "tier": "SMALL"
+        },
+        {
+          "id": 43,
+          "name": "Development of North Eastern Region",
+          "tier": "SMALL"
+        },
+        {
+          "id": 44,
+          "name": "Youth Affairs and Sports",
+          "tier": "SMALL"
+        },
+        {
+          "id": 45,
+          "name": "Culture",
+          "tier": "SMALL"
+        },
+        {
+          "id": 46,
+          "name": "Tourism",
+          "tier": "SMALL"
+        }
+      ]
+    },
+    {
+      "id": "independent-charge",
+      "name": "Ministers of State (Independent Charge) (2 points each)",
+      "ministries": [
+        {
+          "id": 47,
+          "name": "Cabinet Affairs and Coordination",
+          "role": "MOS_INDEPENDENT_CHARGE",
+          "tier": "INDEPENDENT_CHARGE"
+        },
+        {
+          "id": 48,
+          "name": "Law and Justice",
+          "role": "MOS_INDEPENDENT_CHARGE",
+          "tier": "INDEPENDENT_CHARGE"
+        },
+        {
+          "id": 49,
+          "name": "Skill Development and Entrepreneurship",
+          "role": "MOS_INDEPENDENT_CHARGE",
+          "tier": "INDEPENDENT_CHARGE"
+        },
+        {
+          "id": 50,
+          "name": "AYUSH",
+          "role": "MOS_INDEPENDENT_CHARGE",
+          "tier": "INDEPENDENT_CHARGE"
+        },
+        {
+          "id": 51,
+          "name": "Science and Technology",
+          "role": "MOS_INDEPENDENT_CHARGE",
+          "tier": "INDEPENDENT_CHARGE"
+        },
+        {
+          "id": 52,
+          "name": "Earth Sciences",
+          "role": "MOS_INDEPENDENT_CHARGE",
+          "tier": "INDEPENDENT_CHARGE"
+        },
+        {
+          "id": 53,
+          "name": "Statistics and Programme Implementation",
+          "role": "MOS_INDEPENDENT_CHARGE",
+          "tier": "INDEPENDENT_CHARGE"
+        },
+        {
+          "id": 54,
+          "name": "Planning",
+          "role": "MOS_INDEPENDENT_CHARGE",
+          "tier": "INDEPENDENT_CHARGE"
+        }
+      ]
+    }
+  ],
+  "totalPortfolioPositions": 62,
+  "portfolioBreakdown": {
+    "cabinetMinistries": 46,
+    "regularMoS": 8,
+    "independentChargeMoS": 8
+  },
+  "points": {
+    "KEY": 8,
+    "BIG": 4,
+    "SMALL": 3,
+    "MOS_INDEPENDENT_CHARGE": 2,
+    "REGULAR_MOS": 1,
+    "total": 236
+  }
+}

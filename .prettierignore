@@ -1,0 +1,12 @@
+# dependencies and build output
+node_modules
+.next
+out
+build
+coverage
+
+# generated or very large files: reformatting them only creates noise
+package-lock.json
+next-env.d.ts
+src/data/**/*.json
+public

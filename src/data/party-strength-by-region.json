@@ -1,0 +1,225 @@
+{
+  "schemaVersion": 1,
+  "sourceFile": "IndianPartyData.kt",
+  "conversion": "gameStrength = baseStrength * 2",
+  "strengthScale": "0.0 to 1.0 (multiply by 100 for percentage)",
+  "budgetField": "ignored",
+  "missingStrengthPolicy": "Missing values are not invented; AI allocation uses equal fallback weight and marks it as fallback.",
+  "regions": {
+    "Andhra Pradesh": {
+      "TDP": 1.0,
+      "YSRCP": 0.95,
+      "JSP": 0.75,
+      "BJP": 0.55,
+      "INC": 0.3,
+      "CPI": 0.3,
+      "CPM": 0.3
+    },
+    "Telangana": {
+      "INC": 0.9,
+      "BRS": 0.65,
+      "BJP": 0.6,
+      "AIMIM": 0.4,
+      "TDP": 1.0,
+      "CPI": 0.45,
+      "CPM": 0.35
+    },
+    "Tamil Nadu": {
+      "DMK": 1.0,
+      "AIADMK": 0.9,
+      "BJP": 0.65,
+      "INC": 0.65,
+      "PMK": 0.55,
+      "NTK": 0.45,
+      "CPI": 0.45,
+      "CPM": 0.45
+    },
+    "Kerala": {
+      "INC": 0.95,
+      "CPM": 1.0,
+      "CPI": 0.7,
+      "BJP": 0.55,
+      "IUML": 0.65
+    },
+    "Karnataka": {
+      "BJP": 1.0,
+      "INC": 0.95,
+      "JD(S)": 0.65
+    },
+    "Maharashtra": {
+      "BJP": 1.0,
+      "INC": 0.9,
+      "SHS": 0.8,
+      "NCP": 0.75,
+      "SSUBT": 0.65,
+      "NCP-SP": 0.65,
+      "CPM": 0.12
+    },
+    "Uttar Pradesh": {
+      "BJP": 1.0,
+      "SP": 0.95,
+      "INC": 0.6,
+      "BSP": 0.65,
+      "RLD": 0.55
+    },
+    "West Bengal": {
+      "AITC": 1.0,
+      "BJP": 0.9,
+      "INC": 0.45,
+      "CPM": 0.5,
+      "CPI": 0.12
+    },
+    "Odisha": {
+      "BJP": 1.0,
+      "BJD": 0.95,
+      "INC": 0.5,
+      "CPI": 0.12
+    },
+    "Bihar": {
+      "BJP": 0.95,
+      "RJD": 0.9,
+      "JD(U)": 0.8,
+      "INC": 0.6,
+      "LJP": 0.55,
+      "CPI": 0.12,
+      "CPM": 0.12
+    },
+    "Gujarat": {
+      "BJP": 1.0,
+      "INC": 0.7,
+      "AAP": 0.4
+    },
+    "Rajasthan": {
+      "BJP": 1.0,
+      "INC": 0.9,
+      "CPM": 0.12
+    },
+    "Madhya Pradesh": {
+      "BJP": 1.0,
+      "INC": 0.9
+    },
+    "Chhattisgarh": {
+      "BJP": 0.95,
+      "INC": 0.9
+    },
+    "Jharkhand": {
+      "BJP": 0.9,
+      "JMM": 0.9,
+      "INC": 0.6,
+      "AJSU": 0.45,
+      "CPI": 0.12,
+      "CPM": 0.12
+    },
+    "Punjab": {
+      "AAP": 1.0,
+      "INC": 0.75,
+      "SAD": 0.7,
+      "BJP": 0.5
+    },
+    "Haryana": {
+      "BJP": 0.95,
+      "INC": 0.9
+    },
+    "Delhi": {
+      "BJP": 0.95,
+      "AAP": 0.95,
+      "INC": 0.45
+    },
+    "Assam": {
+      "BJP": 0.95,
+      "INC": 0.75,
+      "AGP": 0.6,
+      "AIUDF": 0.45
+    },
+    "Goa": {
+      "BJP": 0.9,
+      "INC": 0.75,
+      "AAP": 0.35
+    },
+    "Himachal Pradesh": {
+      "BJP": 0.9,
+      "INC": 0.9
+    },
+    "Uttarakhand": {
+      "BJP": 0.95,
+      "INC": 0.85
+    },
+    "Jammu & Kashmir": {
+      "BJP": 0.7,
+      "JKNC": 0.9,
+      "INC": 0.6,
+      "PDP": 0.7
+    },
+    "Sikkim": {
+      "SKM": 1.0,
+      "SDF": 0.75,
+      "BJP": 0.3,
+      "INC": 0.3
+    },
+    "Tripura": {
+      "BJP": 0.9,
+      "CPM": 0.75,
+      "INC": 0.45,
+      "TIPRA": 0.55
+    },
+    "Meghalaya": {
+      "NPP": 0.9,
+      "INC": 0.65,
+      "BJP": 0.35
+    },
+    "Mizoram": {
+      "ZPM": 1.0,
+      "MNF": 0.8,
+      "INC": 0.5,
+      "BJP": 0.3
+    },
+    "Nagaland": {
+      "NPF": 0.7,
+      "BJP": 0.45,
+      "INC": 0.35
+    },
+    "Manipur": {
+      "BJP": 0.8,
+      "INC": 0.75,
+      "NPP": 0.45,
+      "CPI": 0.12
+    },
+    "Puducherry": {
+      "AINRC": 0.7,
+      "INC": 0.8,
+      "DMK": 0.8,
+      "BJP": 0.6
+    },
+    "Arunachal Pradesh": {
+      "BJP": 0.95,
+      "INC": 0.7,
+      "NPP": 0.4
+    },
+    "Ladakh": {
+      "BJP": 0.9,
+      "INC": 0.8
+    },
+    "Dadra & Nagar Haveli and Daman & Diu": {
+      "BJP": 1.0,
+      "INC": 0.7
+    },
+    "Chandigarh": {
+      "BJP": 0.9,
+      "INC": 0.84
+    },
+    "Andaman & Nicobar Islands": {
+      "BJP": 0.84,
+      "INC": 0.84
+    },
+    "Lakshadweep": {
+      "BJP": 0.4,
+      "INC": 0.84
+    }
+  },
+  "missingEligiblePartyStrengths": [
+    {
+      "partyId": "CPI",
+      "state": "Manipur"
+    }
+  ]
+}

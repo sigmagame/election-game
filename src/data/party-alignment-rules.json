@@ -1,0 +1,24 @@
+
+{
+  "source": "PARTY ALLIANCE SHIFTS.txt",
+  "rules": [
+    {
+      "partyIds": [
+        "TDP", "JSP", "JD(S)", "BSP", "RLD",
+        "BJD", "JD(U)", "AINRC", "MNF", "NCP", "TIPRA"
+      ],
+      "eligibleAlignments": ["NDA", "INDEPENDENT", "CUSTOM"]
+    },
+    {
+      "partyIds": ["AAP", "DMK"],
+      "eligibleAlignments": ["INDIA", "INDEPENDENT", "CUSTOM"]
+    },
+    {
+      "partyIds": [
+        "ZPM", "PDP", "SDF", "AIUDF",
+        "BRS", "YSRCP", "AIMIM", "NTK"
+      ],
+      "eligibleAlignments": ["INDEPENDENT", "CUSTOM"]
+    }
+  ]
+}

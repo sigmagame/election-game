@@ -1,0 +1,791 @@
+{
+  "schemaVersion": 1,
+  "scheduleId": "LOK_SABHA_2024_FIXED_7_PHASE",
+  "totalConstituencies": 543,
+  "phaseCount": 7,
+  "rules": {
+    "andhraPradesh": "All constituencies in one phase",
+    "telangana": "All constituencies in one phase",
+    "uttarPradesh": "Exactly two phases of 40 constituencies each",
+    "otherStates": "Deterministic balanced allocation; state may be grouped or split only where required by schedule"
+  },
+  "phases": [
+    {
+      "phase": 1,
+      "day": 1,
+      "constituencyCount": 78,
+      "regions": [
+        {
+          "name": "Andhra Pradesh",
+          "constituencyIds": [
+            "pc-andhra-pradesh-amalapuram",
+            "pc-andhra-pradesh-anakapalle",
+            "pc-andhra-pradesh-ananthapur",
+            "pc-andhra-pradesh-araku",
+            "pc-andhra-pradesh-bapatla",
+            "pc-andhra-pradesh-chittoor",
+            "pc-andhra-pradesh-eluru",
+            "pc-andhra-pradesh-guntur",
+            "pc-andhra-pradesh-hindupur",
+            "pc-andhra-pradesh-kadapa",
+            "pc-andhra-pradesh-kakinada",
+            "pc-andhra-pradesh-kurnoolu",
+            "pc-andhra-pradesh-machilipatnam",
+            "pc-andhra-pradesh-nandyal",
+            "pc-andhra-pradesh-narsapuram",
+            "pc-andhra-pradesh-narsaraopet",
+            "pc-andhra-pradesh-nellore",
+            "pc-andhra-pradesh-ongole",
+            "pc-andhra-pradesh-rajahmundry",
+            "pc-andhra-pradesh-rajampet",
+            "pc-andhra-pradesh-srikakulam",
+            "pc-andhra-pradesh-thirupathi",
+            "pc-andhra-pradesh-vijayawada",
+            "pc-andhra-pradesh-visakhapatnam",
+            "pc-andhra-pradesh-vizianagaram"
+          ]
+        },
+        {
+          "name": "Assam",
+          "constituencyIds": [
+            "pc-assam-barpeta",
+            "pc-assam-darrang-udalguri",
+            "pc-assam-dhubri",
+            "pc-assam-dibrugarh",
+            "pc-assam-diphu",
+            "pc-assam-guwahati",
+            "pc-assam-jorhat",
+            "pc-assam-karimganj",
+            "pc-assam-kaziranga",
+            "pc-assam-kokrajhar",
+            "pc-assam-lakhimpur",
+            "pc-assam-nagaon",
+            "pc-assam-silchar",
+            "pc-assam-sonitpur"
+          ]
+        },
+        {
+          "name": "Madhya Pradesh",
+          "constituencyIds": [
+            "pc-madhya-pradesh-balaghat",
+            "pc-madhya-pradesh-betul",
+            "pc-madhya-pradesh-bhind",
+            "pc-madhya-pradesh-bhopal",
+            "pc-madhya-pradesh-chhindwara",
+            "pc-madhya-pradesh-damoh",
+            "pc-madhya-pradesh-dewas",
+            "pc-madhya-pradesh-dhar",
+            "pc-madhya-pradesh-guna",
+            "pc-madhya-pradesh-gwalior",
+            "pc-madhya-pradesh-hoshangabad",
+            "pc-madhya-pradesh-indore",
+            "pc-madhya-pradesh-jabalpur",
+            "pc-madhya-pradesh-khajuraho",
+            "pc-madhya-pradesh-khandwa",
+            "pc-madhya-pradesh-khargone",
+            "pc-madhya-pradesh-mandla",
+            "pc-madhya-pradesh-mandsour",
+            "pc-madhya-pradesh-morena",
+            "pc-madhya-pradesh-rajgarh",
+            "pc-madhya-pradesh-ratlam",
+            "pc-madhya-pradesh-rewa",
+            "pc-madhya-pradesh-sagar",
+            "pc-madhya-pradesh-satna",
+            "pc-madhya-pradesh-shahdol",
+            "pc-madhya-pradesh-sidhi",
+            "pc-madhya-pradesh-tikamgarh",
+            "pc-madhya-pradesh-ujjain",
+            "pc-madhya-pradesh-vidisha"
+          ]
+        },
+        {
+          "name": "Manipur",
+          "constituencyIds": [
+            "pc-manipur-inner-manipur",
+            "pc-manipur-outer-manipur"
+          ]
+        },
+        {
+          "name": "Mizoram",
+          "constituencyIds": [
+            "pc-mizoram-mizoram"
+          ]
+        },
+        {
+          "name": "NCT OF Delhi",
+          "constituencyIds": [
+            "pc-nct-of-delhi-chandni-chowk",
+            "pc-nct-of-delhi-east-delhi",
+            "pc-nct-of-delhi-new-delhi",
+            "pc-nct-of-delhi-north-east-delhi",
+            "pc-nct-of-delhi-north-west-delhi",
+            "pc-nct-of-delhi-south-delhi",
+            "pc-nct-of-delhi-west-delhi"
+          ]
+        }
+      ]
+    },
+    {
+      "phase": 2,
+      "day": 2,
+      "constituencyCount": 78,
+      "regions": [
+        {
+          "name": "Andaman & Nicobar Islands",
+          "constituencyIds": [
+            "pc-andaman-nicobar-islands-andaman-nicobar-islands"
+          ]
+        },
+        {
+          "name": "Goa",
+          "constituencyIds": [
+            "pc-goa-north-goa",
+            "pc-goa-south-goa"
+          ]
+        },
+        {
+          "name": "Himachal Pradesh",
+          "constituencyIds": [
+            "pc-himachal-pradesh-hamirpur",
+            "pc-himachal-pradesh-kangra",
+            "pc-himachal-pradesh-mandi",
+            "pc-himachal-pradesh-shimla"
+          ]
+        },
+        {
+          "name": "Jharkhand",
+          "constituencyIds": [
+            "pc-jharkhand-chatra",
+            "pc-jharkhand-dhanbad",
+            "pc-jharkhand-dumka",
+            "pc-jharkhand-giridih",
+            "pc-jharkhand-godda",
+            "pc-jharkhand-hazaribagh",
+            "pc-jharkhand-jamshedpur",
+            "pc-jharkhand-khunti",
+            "pc-jharkhand-kodarma",
+            "pc-jharkhand-lohardaga",
+            "pc-jharkhand-palamu",
+            "pc-jharkhand-rajmahal",
+            "pc-jharkhand-ranchi",
+            "pc-jharkhand-singhbhum"
+          ]
+        },
+        {
+          "name": "Nagaland",
+          "constituencyIds": [
+            "pc-nagaland-nagaland"
+          ]
+        },
+        {
+          "name": "Tamil Nadu",
+          "constituencyIds": [
+            "pc-tamil-nadu-arakkonam",
+            "pc-tamil-nadu-arani",
+            "pc-tamil-nadu-chennai-central",
+            "pc-tamil-nadu-chennai-north",
+            "pc-tamil-nadu-chennai-south",
+            "pc-tamil-nadu-chidambaram",
+            "pc-tamil-nadu-coimbatore",
+            "pc-tamil-nadu-cuddalore",
+            "pc-tamil-nadu-dharmapuri",
+            "pc-tamil-nadu-dindigul",
+            "pc-tamil-nadu-erode",
+            "pc-tamil-nadu-kallakurichi",
+            "pc-tamil-nadu-kancheepuram",
+            "pc-tamil-nadu-kanniyakumari",
+            "pc-tamil-nadu-karur",
+            "pc-tamil-nadu-krishnagiri",
+            "pc-tamil-nadu-madurai",
+            "pc-tamil-nadu-mayiladuthurai",
+            "pc-tamil-nadu-nagapattinam",
+            "pc-tamil-nadu-namakkal",
+            "pc-tamil-nadu-nilgiris",
+            "pc-tamil-nadu-perambalur",
+            "pc-tamil-nadu-pollachi",
+            "pc-tamil-nadu-ramanathapuram",
+            "pc-tamil-nadu-salem",
+            "pc-tamil-nadu-sivaganga",
+            "pc-tamil-nadu-sriperumbudur",
+            "pc-tamil-nadu-tenkasi",
+            "pc-tamil-nadu-thanjavur",
+            "pc-tamil-nadu-theni",
+            "pc-tamil-nadu-thoothukkudi",
+            "pc-tamil-nadu-tiruchirappalli",
+            "pc-tamil-nadu-tirunelveli",
+            "pc-tamil-nadu-tiruppur",
+            "pc-tamil-nadu-tiruvallur",
+            "pc-tamil-nadu-tiruvannamalai",
+            "pc-tamil-nadu-vellore",
+            "pc-tamil-nadu-viluppuram",
+            "pc-tamil-nadu-virudhunagar"
+          ]
+        },
+        {
+          "name": "Telangana",
+          "constituencyIds": [
+            "pc-telangana-adilabad",
+            "pc-telangana-bhongir",
+            "pc-telangana-chevella",
+            "pc-telangana-hyderabad",
+            "pc-telangana-karimnagar",
+            "pc-telangana-khammam",
+            "pc-telangana-mahabubabad",
+            "pc-telangana-mahbubnagar",
+            "pc-telangana-malkajgiri",
+            "pc-telangana-medak",
+            "pc-telangana-nagarkurnool",
+            "pc-telangana-nalgonda",
+            "pc-telangana-nizamabad",
+            "pc-telangana-peddapalle",
+            "pc-telangana-secunderabad",
+            "pc-telangana-warangal",
+            "pc-telangana-zahirabad"
+          ]
+        }
+      ]
+    },
+    {
+      "phase": 3,
+      "day": 3,
+      "constituencyCount": 78,
+      "regions": [
+        {
+          "name": "Arunachal Pradesh",
+          "constituencyIds": [
+            "pc-arunachal-pradesh-arunachal-east",
+            "pc-arunachal-pradesh-arunachal-west"
+          ]
+        },
+        {
+          "name": "Jammu and Kashmir",
+          "constituencyIds": [
+            "pc-jammu-and-kashmir-anantnag-rajouri",
+            "pc-jammu-and-kashmir-baramulla",
+            "pc-jammu-and-kashmir-jammu",
+            "pc-jammu-and-kashmir-srinagar",
+            "pc-jammu-and-kashmir-udhampur"
+          ]
+        },
+        {
+          "name": "Kerala",
+          "constituencyIds": [
+            "pc-kerala-alappuzha",
+            "pc-kerala-alathur",
+            "pc-kerala-attingal",
+            "pc-kerala-chalakudy",
+            "pc-kerala-ernakulam",
+            "pc-kerala-idukki",
+            "pc-kerala-kannur",
+            "pc-kerala-kasaragod",
+            "pc-kerala-kollam",
+            "pc-kerala-kottayam",
+            "pc-kerala-kozhikode",
+            "pc-kerala-malappuram",
+            "pc-kerala-mavelikkara",
+            "pc-kerala-palakkad",
+            "pc-kerala-pathanamthitta",
+            "pc-kerala-ponnani",
+            "pc-kerala-thiruvananthapuram",
+            "pc-kerala-thrissur",
+            "pc-kerala-vadakara",
+            "pc-kerala-wayanad"
+          ]
+        },
+        {
+          "name": "Maharashtra",
+          "constituencyIds": [
+            "pc-maharashtra-ahmednagar",
+            "pc-maharashtra-akola",
+            "pc-maharashtra-amravati",
+            "pc-maharashtra-aurangabad",
+            "pc-maharashtra-baramati",
+            "pc-maharashtra-beed",
+            "pc-maharashtra-bhandara-gondiya",
+            "pc-maharashtra-bhiwandi",
+            "pc-maharashtra-buldhana",
+            "pc-maharashtra-chandrapur",
+            "pc-maharashtra-dhule",
+            "pc-maharashtra-dindori",
+            "pc-maharashtra-gadchiroli-chimur",
+            "pc-maharashtra-hatkanangale",
+            "pc-maharashtra-hingoli",
+            "pc-maharashtra-jalgaon",
+            "pc-maharashtra-jalna",
+            "pc-maharashtra-kalyan",
+            "pc-maharashtra-kolhapur",
+            "pc-maharashtra-latur",
+            "pc-maharashtra-madha",
+            "pc-maharashtra-maval",
+            "pc-maharashtra-mumbai-north",
+            "pc-maharashtra-mumbai-north-central",
+            "pc-maharashtra-mumbai-north-east",
+            "pc-maharashtra-mumbai-north-west",
+            "pc-maharashtra-mumbai-south",
+            "pc-maharashtra-mumbai-south-central",
+            "pc-maharashtra-nagpur",
+            "pc-maharashtra-nanded",
+            "pc-maharashtra-nandurbar",
+            "pc-maharashtra-nashik",
+            "pc-maharashtra-osmanabad",
+            "pc-maharashtra-palghar",
+            "pc-maharashtra-parbhani",
+            "pc-maharashtra-pune",
+            "pc-maharashtra-raigad",
+            "pc-maharashtra-ramtek",
+            "pc-maharashtra-ratnagiri-sindhudurg",
+            "pc-maharashtra-raver",
+            "pc-maharashtra-sangli",
+            "pc-maharashtra-satara",
+            "pc-maharashtra-shirdi",
+            "pc-maharashtra-shirur",
+            "pc-maharashtra-solapur",
+            "pc-maharashtra-thane",
+            "pc-maharashtra-wardha",
+            "pc-maharashtra-yavatmal-washim"
+          ]
+        },
+        {
+          "name": "Meghalaya",
+          "constituencyIds": [
+            "pc-meghalaya-shillong",
+            "pc-meghalaya-tura"
+          ]
+        },
+        {
+          "name": "Puducherry",
+          "constituencyIds": [
+            "pc-puducherry-puducherry"
+          ]
+        }
+      ]
+    },
+    {
+      "phase": 4,
+      "day": 4,
+      "constituencyCount": 78,
+      "regions": [
+        {
+          "name": "Chandigarh",
+          "constituencyIds": [
+            "pc-chandigarh-chandigarh"
+          ]
+        },
+        {
+          "name": "Odisha",
+          "constituencyIds": [
+            "pc-odisha-aska",
+            "pc-odisha-balasore",
+            "pc-odisha-bargarh",
+            "pc-odisha-berhampur",
+            "pc-odisha-bhadrak",
+            "pc-odisha-bhubaneswar",
+            "pc-odisha-bolangir",
+            "pc-odisha-cuttack",
+            "pc-odisha-dhenkanal",
+            "pc-odisha-jagatsinghpur",
+            "pc-odisha-jajpur",
+            "pc-odisha-kalahandi",
+            "pc-odisha-kandhamal",
+            "pc-odisha-kendrapara",
+            "pc-odisha-keonjhar",
+            "pc-odisha-koraput",
+            "pc-odisha-mayurbhanj",
+            "pc-odisha-nabarangpur",
+            "pc-odisha-puri",
+            "pc-odisha-sambalpur",
+            "pc-odisha-sundargarh"
+          ]
+        },
+        {
+          "name": "Punjab",
+          "constituencyIds": [
+            "pc-punjab-amritsar",
+            "pc-punjab-anandpur-sahib",
+            "pc-punjab-bathinda",
+            "pc-punjab-faridkot",
+            "pc-punjab-fatehgarh-sahib",
+            "pc-punjab-firozpur",
+            "pc-punjab-gurdaspur",
+            "pc-punjab-hoshiarpur",
+            "pc-punjab-jalandhar",
+            "pc-punjab-khadoor-sahib",
+            "pc-punjab-ludhiana",
+            "pc-punjab-patiala",
+            "pc-punjab-sangrur"
+          ]
+        },
+        {
+          "name": "Sikkim",
+          "constituencyIds": [
+            "pc-sikkim-sikkim"
+          ]
+        },
+        {
+          "name": "West Bengal",
+          "constituencyIds": [
+            "pc-west-bengal-alipurduars",
+            "pc-west-bengal-arambag",
+            "pc-west-bengal-asansol",
+            "pc-west-bengal-baharampur",
+            "pc-west-bengal-balurghat",
+            "pc-west-bengal-bangaon",
+            "pc-west-bengal-bankura",
+            "pc-west-bengal-barasat",
+            "pc-west-bengal-bardhaman-purba",
+            "pc-west-bengal-bardhaman-durgapur",
+            "pc-west-bengal-barrackpur",
+            "pc-west-bengal-basirhat",
+            "pc-west-bengal-birbhum",
+            "pc-west-bengal-bishnupur",
+            "pc-west-bengal-bolpur",
+            "pc-west-bengal-coochbehar",
+            "pc-west-bengal-darjeeling",
+            "pc-west-bengal-diamond-harbour",
+            "pc-west-bengal-dum-dum",
+            "pc-west-bengal-ghatal",
+            "pc-west-bengal-hooghly",
+            "pc-west-bengal-howrah",
+            "pc-west-bengal-jadavpur",
+            "pc-west-bengal-jalpaiguri",
+            "pc-west-bengal-jangipur",
+            "pc-west-bengal-jaynagar",
+            "pc-west-bengal-jhargram",
+            "pc-west-bengal-kanthi",
+            "pc-west-bengal-kolkata-dakshin",
+            "pc-west-bengal-kolkata-uttar",
+            "pc-west-bengal-krishnanagar",
+            "pc-west-bengal-maldaha-dakshin",
+            "pc-west-bengal-maldaha-uttar",
+            "pc-west-bengal-mathurapur",
+            "pc-west-bengal-medinipur",
+            "pc-west-bengal-murshidabad",
+            "pc-west-bengal-purulia",
+            "pc-west-bengal-raiganj",
+            "pc-west-bengal-ranaghat",
+            "pc-west-bengal-sreerampur",
+            "pc-west-bengal-tamluk",
+            "pc-west-bengal-uluberia"
+          ]
+        }
+      ]
+    },
+    {
+      "phase": 5,
+      "day": 5,
+      "constituencyCount": 77,
+      "regions": [
+        {
+          "name": "Bihar",
+          "constituencyIds": [
+            "pc-bihar-araria",
+            "pc-bihar-arrah",
+            "pc-bihar-aurangabad",
+            "pc-bihar-banka",
+            "pc-bihar-begusarai",
+            "pc-bihar-bhagalpur",
+            "pc-bihar-buxar",
+            "pc-bihar-darbhanga",
+            "pc-bihar-gaya",
+            "pc-bihar-gopalganj",
+            "pc-bihar-hajipur",
+            "pc-bihar-jahanabad",
+            "pc-bihar-jamui",
+            "pc-bihar-jhanjharpur",
+            "pc-bihar-karakat",
+            "pc-bihar-katihar",
+            "pc-bihar-khagaria",
+            "pc-bihar-kishanganj",
+            "pc-bihar-madhepura",
+            "pc-bihar-madhubani",
+            "pc-bihar-maharajganj",
+            "pc-bihar-munger",
+            "pc-bihar-muzaffarpur",
+            "pc-bihar-nalanda",
+            "pc-bihar-nawada",
+            "pc-bihar-paschim-champaran",
+            "pc-bihar-patliputra",
+            "pc-bihar-patna-sahib",
+            "pc-bihar-purnia",
+            "pc-bihar-purvi-champaran",
+            "pc-bihar-samastipur",
+            "pc-bihar-saran",
+            "pc-bihar-sasaram",
+            "pc-bihar-sheohar",
+            "pc-bihar-sitamarhi",
+            "pc-bihar-siwan",
+            "pc-bihar-supaul",
+            "pc-bihar-ujiarpur",
+            "pc-bihar-vaishali",
+            "pc-bihar-valmiki-nagar"
+          ]
+        },
+        {
+          "name": "Dadra & Nagar Haveli and Daman & Diu",
+          "constituencyIds": [
+            "pc-dadra-nagar-haveli-and-daman-diu-dadar-nagar-haveli",
+            "pc-dadra-nagar-haveli-and-daman-diu-daman-diu"
+          ]
+        },
+        {
+          "name": "Karnataka",
+          "constituencyIds": [
+            "pc-karnataka-bagalkot",
+            "pc-karnataka-bangalore-central",
+            "pc-karnataka-bangalore-north",
+            "pc-karnataka-bangalore-rural",
+            "pc-karnataka-bangalore-south",
+            "pc-karnataka-belgaum",
+            "pc-karnataka-bellary",
+            "pc-karnataka-bidar",
+            "pc-karnataka-bijapur",
+            "pc-karnataka-chamarajanagar",
+            "pc-karnataka-chikkballapur",
+            "pc-karnataka-chikkodi",
+            "pc-karnataka-chitradurga",
+            "pc-karnataka-dakshina-kannada",
+            "pc-karnataka-davanagere",
+            "pc-karnataka-dharwad",
+            "pc-karnataka-gulbarga",
+            "pc-karnataka-hassan",
+            "pc-karnataka-haveri",
+            "pc-karnataka-kolar",
+            "pc-karnataka-koppal",
+            "pc-karnataka-mandya",
+            "pc-karnataka-mysore",
+            "pc-karnataka-raichur",
+            "pc-karnataka-shimoga",
+            "pc-karnataka-tumkur",
+            "pc-karnataka-udupi-chikmagalur",
+            "pc-karnataka-uttara-kannada"
+          ]
+        },
+        {
+          "name": "Tripura",
+          "constituencyIds": [
+            "pc-tripura-tripura-east",
+            "pc-tripura-tripura-west"
+          ]
+        },
+        {
+          "name": "Uttarakhand",
+          "constituencyIds": [
+            "pc-uttarakhand-almora",
+            "pc-uttarakhand-garhwal",
+            "pc-uttarakhand-haridwar",
+            "pc-uttarakhand-nainital-udhamsingh",
+            "pc-uttarakhand-tehri-garhwal"
+          ]
+        }
+      ]
+    },
+    {
+      "phase": 6,
+      "day": 6,
+      "constituencyCount": 77,
+      "regions": [
+        {
+          "name": "Gujarat",
+          "constituencyIds": [
+            "pc-gujarat-ahmedabad-east",
+            "pc-gujarat-ahmedabad-west",
+            "pc-gujarat-amreli",
+            "pc-gujarat-anand",
+            "pc-gujarat-banaskantha",
+            "pc-gujarat-bardoli",
+            "pc-gujarat-bharuch",
+            "pc-gujarat-bhavnagar",
+            "pc-gujarat-chhota-udaipur",
+            "pc-gujarat-dahod",
+            "pc-gujarat-gandhinagar",
+            "pc-gujarat-jamnagar",
+            "pc-gujarat-junagadh",
+            "pc-gujarat-kachchh",
+            "pc-gujarat-kheda",
+            "pc-gujarat-mahesana",
+            "pc-gujarat-navsari",
+            "pc-gujarat-panchmahal",
+            "pc-gujarat-patan",
+            "pc-gujarat-porbandar",
+            "pc-gujarat-rajkot",
+            "pc-gujarat-sabarkantha",
+            "pc-gujarat-surat",
+            "pc-gujarat-surendranagar",
+            "pc-gujarat-vadodara",
+            "pc-gujarat-valsad"
+          ]
+        },
+        {
+          "name": "Haryana",
+          "constituencyIds": [
+            "pc-haryana-ambala",
+            "pc-haryana-bhiwani",
+            "pc-haryana-faridabad",
+            "pc-haryana-gurgaon",
+            "pc-haryana-hisar",
+            "pc-haryana-karnal",
+            "pc-haryana-kurukshetra",
+            "pc-haryana-rohtak",
+            "pc-haryana-sirsa",
+            "pc-haryana-sonipat"
+          ]
+        },
+        {
+          "name": "Ladakh",
+          "constituencyIds": [
+            "pc-ladakh-ladakh"
+          ]
+        },
+        {
+          "name": "Uttar Pradesh — Part 1",
+          "constituencyIds": [
+            "pc-uttar-pradesh-agra",
+            "pc-uttar-pradesh-akbarpur",
+            "pc-uttar-pradesh-aligarh",
+            "pc-uttar-pradesh-allahabad",
+            "pc-uttar-pradesh-ambedkar-nagar",
+            "pc-uttar-pradesh-amethi",
+            "pc-uttar-pradesh-amroha",
+            "pc-uttar-pradesh-aonla",
+            "pc-uttar-pradesh-azamgarh",
+            "pc-uttar-pradesh-badaun",
+            "pc-uttar-pradesh-baghpat",
+            "pc-uttar-pradesh-baharaich",
+            "pc-uttar-pradesh-ballia",
+            "pc-uttar-pradesh-banda",
+            "pc-uttar-pradesh-bansgaon",
+            "pc-uttar-pradesh-barabanki",
+            "pc-uttar-pradesh-bareilly",
+            "pc-uttar-pradesh-basti",
+            "pc-uttar-pradesh-bhadohi",
+            "pc-uttar-pradesh-bijnor",
+            "pc-uttar-pradesh-bulandshahr",
+            "pc-uttar-pradesh-chandauli",
+            "pc-uttar-pradesh-deoria",
+            "pc-uttar-pradesh-dhaurahra",
+            "pc-uttar-pradesh-domariyaganj",
+            "pc-uttar-pradesh-etah",
+            "pc-uttar-pradesh-etawah",
+            "pc-uttar-pradesh-faizabad",
+            "pc-uttar-pradesh-farrukhabad",
+            "pc-uttar-pradesh-fatehpur",
+            "pc-uttar-pradesh-fatehpur-sikri",
+            "pc-uttar-pradesh-firozabad",
+            "pc-uttar-pradesh-gautam-buddha-nagar",
+            "pc-uttar-pradesh-ghaziabad",
+            "pc-uttar-pradesh-ghazipur",
+            "pc-uttar-pradesh-ghosi",
+            "pc-uttar-pradesh-gonda",
+            "pc-uttar-pradesh-gorakhpur",
+            "pc-uttar-pradesh-hamirpur",
+            "pc-uttar-pradesh-hardoi"
+          ]
+        }
+      ]
+    },
+    {
+      "phase": 7,
+      "day": 7,
+      "constituencyCount": 77,
+      "regions": [
+        {
+          "name": "Chhattisgarh",
+          "constituencyIds": [
+            "pc-chhattisgarh-bastar",
+            "pc-chhattisgarh-bilaspur",
+            "pc-chhattisgarh-durg",
+            "pc-chhattisgarh-janjgir-champa",
+            "pc-chhattisgarh-kanker",
+            "pc-chhattisgarh-korba",
+            "pc-chhattisgarh-mahasamund",
+            "pc-chhattisgarh-raigarh",
+            "pc-chhattisgarh-raipur",
+            "pc-chhattisgarh-rajnandgaon",
+            "pc-chhattisgarh-surguja"
+          ]
+        },
+        {
+          "name": "Lakshadweep",
+          "constituencyIds": [
+            "pc-lakshadweep-lakshadweep"
+          ]
+        },
+        {
+          "name": "Rajasthan",
+          "constituencyIds": [
+            "pc-rajasthan-ajmer",
+            "pc-rajasthan-alwar",
+            "pc-rajasthan-banswara",
+            "pc-rajasthan-barmer",
+            "pc-rajasthan-bharatpur",
+            "pc-rajasthan-bhilwara",
+            "pc-rajasthan-bikaner",
+            "pc-rajasthan-chittorgarh",
+            "pc-rajasthan-churu",
+            "pc-rajasthan-dausa",
+            "pc-rajasthan-ganganagar",
+            "pc-rajasthan-jaipur",
+            "pc-rajasthan-jaipur-rural",
+            "pc-rajasthan-jalore",
+            "pc-rajasthan-jhalawar-baran",
+            "pc-rajasthan-jhunjhunu",
+            "pc-rajasthan-jodhpur",
+            "pc-rajasthan-karauli-dholpur",
+            "pc-rajasthan-kota",
+            "pc-rajasthan-nagaur",
+            "pc-rajasthan-pali",
+            "pc-rajasthan-rajsamand",
+            "pc-rajasthan-sikar",
+            "pc-rajasthan-tonk-sawai",
+            "pc-rajasthan-udaipur"
+          ]
+        },
+        {
+          "name": "Uttar Pradesh — Part 2",
+          "constituencyIds": [
+            "pc-uttar-pradesh-hathras",
+            "pc-uttar-pradesh-jalaun",
+            "pc-uttar-pradesh-jaunpur",
+            "pc-uttar-pradesh-jhansi",
+            "pc-uttar-pradesh-kairana",
+            "pc-uttar-pradesh-kaiserganj",
+            "pc-uttar-pradesh-kannauj",
+            "pc-uttar-pradesh-kanpur",
+            "pc-uttar-pradesh-kaushambi",
+            "pc-uttar-pradesh-kheri",
+            "pc-uttar-pradesh-kushi-nagar",
+            "pc-uttar-pradesh-lalganj",
+            "pc-uttar-pradesh-lucknow",
+            "pc-uttar-pradesh-machhlishahr",
+            "pc-uttar-pradesh-maharajganj",
+            "pc-uttar-pradesh-mainpuri",
+            "pc-uttar-pradesh-mathura",
+            "pc-uttar-pradesh-meerut",
+            "pc-uttar-pradesh-mirzapur",
+            "pc-uttar-pradesh-misrikh",
+            "pc-uttar-pradesh-mohanlalganj",
+            "pc-uttar-pradesh-moradabad",
+            "pc-uttar-pradesh-muzaffarnagar",
+            "pc-uttar-pradesh-nagina",
+            "pc-uttar-pradesh-phulpur",
+            "pc-uttar-pradesh-pilibhit",
+            "pc-uttar-pradesh-pratapgarh",
+            "pc-uttar-pradesh-rae-bareli",
+            "pc-uttar-pradesh-rampur",
+            "pc-uttar-pradesh-robertsganj",
+            "pc-uttar-pradesh-saharanpur",
+            "pc-uttar-pradesh-salempur",
+            "pc-uttar-pradesh-sambhal",
+            "pc-uttar-pradesh-sant-kabir-nagar",
+            "pc-uttar-pradesh-shahjahanpur",
+            "pc-uttar-pradesh-shrawasti",
+            "pc-uttar-pradesh-sitapur",
+            "pc-uttar-pradesh-sultanpur",
+            "pc-uttar-pradesh-unnao",
+            "pc-uttar-pradesh-varanasi"
+          ]
+        }
+      ]
+    }
+  ]
+}

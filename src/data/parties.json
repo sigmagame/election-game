@@ -1,0 +1,178 @@
+{
+  "totalParties": 43,
+  "source": "Indian_Election_Game_Party_List.txt",
+  "parties": [
+    {
+      "id": "AAP",
+      "name": "AAP"
+    },
+    {
+      "id": "AGP",
+      "name": "AGP"
+    },
+    {
+      "id": "AIADMK",
+      "name": "AIADMK"
+    },
+    {
+      "id": "AIMIM",
+      "name": "AIMIM"
+    },
+    {
+      "id": "AINRC",
+      "name": "AINRC"
+    },
+    {
+      "id": "AIUDF",
+      "name": "AIUDF"
+    },
+    {
+      "id": "AITC",
+      "name": "AITC"
+    },
+    {
+      "id": "AJSU",
+      "name": "AJSU"
+    },
+    {
+      "id": "BJP",
+      "name": "BJP"
+    },
+    {
+      "id": "BJD",
+      "name": "BJD"
+    },
+    {
+      "id": "BSP",
+      "name": "BSP"
+    },
+    {
+      "id": "BRS",
+      "name": "BRS"
+    },
+    {
+      "id": "CPI",
+      "name": "CPI"
+    },
+    {
+      "id": "CPM",
+      "name": "CPM"
+    },
+    {
+      "id": "DMK",
+      "name": "DMK"
+    },
+    {
+      "id": "INC",
+      "name": "INC"
+    },
+    {
+      "id": "IUML",
+      "name": "IUML"
+    },
+    {
+      "id": "JD(U)",
+      "name": "JD(U)"
+    },
+    {
+      "id": "JD(S)",
+      "name": "JD(S)"
+    },
+    {
+      "id": "JMM",
+      "name": "JMM"
+    },
+    {
+      "id": "JKNC",
+      "name": "JKNC"
+    },
+    {
+      "id": "JSP",
+      "name": "JSP"
+    },
+    {
+      "id": "LJP",
+      "name": "LJP"
+    },
+    {
+      "id": "MNF",
+      "name": "MNF"
+    },
+    {
+      "id": "NCP",
+      "name": "NCP"
+    },
+    {
+      "id": "NCP-SP",
+      "name": "NCP-SP"
+    },
+    {
+      "id": "NPF",
+      "name": "NPF"
+    },
+    {
+      "id": "NPP",
+      "name": "NPP"
+    },
+    {
+      "id": "NTK",
+      "name": "NTK"
+    },
+    {
+      "id": "PDP",
+      "name": "PDP"
+    },
+    {
+      "id": "PMK",
+      "name": "PMK"
+    },
+    {
+      "id": "RJD",
+      "name": "RJD"
+    },
+    {
+      "id": "RLD",
+      "name": "RLD"
+    },
+    {
+      "id": "SAD",
+      "name": "SAD"
+    },
+    {
+      "id": "SDF",
+      "name": "SDF"
+    },
+    {
+      "id": "SHS",
+      "name": "SHS"
+    },
+    {
+      "id": "SP",
+      "name": "SP"
+    },
+    {
+      "id": "SSUBT",
+      "name": "SSUBT"
+    },
+    {
+      "id": "TDP",
+      "name": "TDP"
+    },
+    {
+      "id": "TIPRA",
+      "name": "TIPRA"
+    },
+    {
+      "id": "YSRCP",
+      "name": "YSRCP"
+    },
+    {
+      "id": "ZPM",
+      "name": "ZPM"
+    },
+    {
+      "id": "SKM",
+      "name": "SKM"
+    }
+  ]
+}

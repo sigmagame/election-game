@@ -1,0 +1,31 @@
+{
+  "stages": {
+    "game.created": "cf89a7f4bcfaa012",
+    "game.allocated": "7aee3fc76fe5832f",
+    "campaign.created": "cbe83aaf38f853af",
+    "week.1": "a3c9ce762163b03d",
+    "week.2": "c2e6d76c1306211f",
+    "week.3": "06ee16db08440005",
+    "week.4": "4cac84229aec1768",
+    "week.5": "d9c47943a4f09dc0",
+    "week.6": "086c0ac2cc930bb8",
+    "week.7": "d6dea2b0b1e63f55",
+    "week.8": "92cb594071328c75",
+    "week.9": "917b3a10085546d3",
+    "week.10": "111279ecdf18051e",
+    "week.11": "e8ac202c911a7308",
+    "week.12": "b9bac64cc7d37798",
+    "finalReport": "ff8466b53c7e196a"
+  },
+  "readable": {
+    "totalSeats": 543,
+    "majorityMark": 272,
+    "leadingBloc": null,
+    "leadingBlocSeats": 250,
+    "topAlliances": [
+      "NDA:250",
+      "INDIA Alliance:182",
+      "Progressive Democratic Front:54"
+    ]
+  }
+}

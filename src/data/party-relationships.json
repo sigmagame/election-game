@@ -1,0 +1,2063 @@
+{
+  "schemaVersion": 2,
+  "partyCount": 43,
+  "uniqueUnorderedPairCount": 903,
+  "defaultRelationship": "NEUTRAL",
+  "relationshipTypes": [
+    "STRONG_ALLY",
+    "FRIENDLY",
+    "NEUTRAL",
+    "RIVAL",
+    "STRONG_RIVAL"
+  ],
+  "notes": [
+    "Relationships are reciprocal; partyIds are stored in canonical sorted order.",
+    "National relationships form the baseline; state-specific rules take precedence.",
+    "CONDITIONAL rivalry requires mutual explicit cooperation-partner selection by both parties.",
+    "Unlisted national pairs resolve to NEUTRAL.",
+    "Party footholds independently determine geographical eligibility."
+  ],
+  "relationships": [
+    {
+      "partyIds": [
+        "AAP",
+        "BJP"
+      ],
+      "relationship": "STRONG_RIVAL",
+      "scope": {
+        "type": "GENERAL"
+      }
+    },
+    {
+      "partyIds": [
+        "AAP",
+        "CPI"
+      ],
+      "relationship": "FRIENDLY",
+      "scope": {
+        "type": "GENERAL"
+      }
+    },
+    {
+      "partyIds": [
+        "AAP",
+        "CPM"
+      ],
+      "relationship": "FRIENDLY",
+      "scope": {
+        "type": "GENERAL"
+      }
+    },
+    {
+      "partyIds": [
+        "AAP",
+        "DMK"
+      ],
+      "relationship": "FRIENDLY",
+      "scope": {
+        "type": "GENERAL"
+      }
+    },
+    {
+      "partyIds": [
+        "AAP",
+        "INC"
+      ],
+      "relationship": "FRIENDLY",
+      "scope": {
+        "type": "GENERAL"
+      }
+    },
+    {
+      "partyIds": [
+        "AAP",
+        "SAD"
+      ],
+      "relationship": "RIVAL",
+      "scope": {
+        "type": "GENERAL"
+      }
+    },
+    {
+      "partyIds": [
+        "AAP",
+        "SP"
+      ],
+      "relationship": "FRIENDLY",
+      "scope": {
+        "type": "GENERAL"
+      }
+    },
+    {
+      "partyIds": [
+        "AGP",
+        "AIUDF"
+      ],
+      "relationship": "RIVAL",
+      "scope": {
+        "type": "GENERAL"
+      }
+    },
+    {
+      "partyIds": [
+        "AGP",
+        "AJSU"
+      ],
+      "relationship": "FRIENDLY",
+      "scope": {
+        "type": "GENERAL"
+      }
+    },
+    {
+      "partyIds": [
+        "AGP",
+        "BJP"
+      ],
+      "relationship": "STRONG_ALLY",
+      "scope": {
+        "type": "GENERAL"
+      }
+    },
+    {
+      "partyIds": [
+        "AGP",
+        "INC"
+      ],
+      "relationship": "RIVAL",
+      "scope": {
+        "type": "GENERAL"
+      }
+    },
+    {
+      "partyIds": [
+        "AGP",
+        "NPP"
+      ],
+      "relationship": "FRIENDLY",
+      "scope": {
+        "type": "GENERAL"
+      }
+    },
+    {
+      "partyIds": [
+        "AIADMK",
+        "AINRC"
+      ],
+      "relationship": "RIVAL",
+      "scope": {
+        "type": "GENERAL",
+        "activation": "CONDITIONAL"
+      }
+    },
+    {
+      "partyIds": [
+        "AIADMK",
+        "BJP"
+      ],
+      "relationship": "RIVAL",
+      "scope": {
+        "type": "GENERAL",
+        "activation": "CONDITIONAL"
+      }
+    },
+    {
+      "partyIds": [
+        "AIADMK",
+        "DMK"
+      ],
+      "relationship": "STRONG_RIVAL",
+      "scope": {
+        "type": "GENERAL"
+      }
+    },
+    {
+      "partyIds": [
+        "AIADMK",
+        "INC"
+      ],
+      "relationship": "RIVAL",
+      "scope": {
+        "type": "GENERAL"
+      }
+    },
+    {
+      "partyIds": [
+        "AIADMK",
+        "NTK"
+      ],
+      "relationship": "RIVAL",
+      "scope": {
+        "type": "GENERAL"
+      }
+    },
+    {
+      "partyIds": [
+        "AIADMK",
+        "PMK"
+      ],
+      "relationship": "FRIENDLY",
+      "scope": {
+        "type": "GENERAL"
+      }
+    },
+    {
+      "partyIds": [
+        "AIADMK",
+        "TDP"
+      ],
+      "relationship": "NEUTRAL",
+      "scope": {
+        "type": "GENERAL",
+        "activation": "CONDITIONAL"
+      }
+    },
+    {
+      "partyIds": [
+        "AIMIM",
+        "BJP"
+      ],
+      "relationship": "RIVAL",
+      "scope": {
+        "type": "GENERAL"
+      }
+    },
+    {
+      "partyIds": [
+        "AIMIM",
+        "BRS"
+      ],
+      "relationship": "RIVAL",
+      "scope": {
+        "type": "GENERAL",
+        "activation": "CONDITIONAL"
+      }
+    },
+    {
+      "partyIds": [
+        "AIMIM",
+        "INC"
+      ],
+      "relationship": "RIVAL",
+      "scope": {
+        "type": "GENERAL",
+        "activation": "CONDITIONAL"
+      }
+    },
+    {
+      "partyIds": [
+        "AIMIM",
+        "SP"
+      ],
+      "relationship": "RIVAL",
+      "scope": {
+        "type": "GENERAL",
+        "activation": "CONDITIONAL"
+      }
+    },
+    {
+      "partyIds": [
+        "AINRC",
+        "BJP"
+      ],
+      "relationship": "FRIENDLY",
+      "scope": {
+        "type": "GENERAL"
+      }
+    },
+    {
+      "partyIds": [
+        "AINRC",
+        "DMK"
+      ],
+      "relationship": "RIVAL",
+      "scope": {
+        "type": "GENERAL"
+      }
+    },
+    {
+      "partyIds": [
+        "AINRC",
+        "INC"
+      ],
+      "relationship": "RIVAL",
+      "scope": {
+        "type": "GENERAL",
+        "activation": "CONDITIONAL"
+      }
+    },
+    {
+      "partyIds": [
+        "AITC",
+        "AIUDF"
+      ],
+      "relationship": "RIVAL",
+      "scope": {
+        "type": "GENERAL",
+        "activation": "CONDITIONAL"
+      }
+    },
+    {
+      "partyIds": [
+        "AITC",
+        "BJP"
+      ],
+      "relationship": "RIVAL",
+      "scope": {
+        "type": "GENERAL"
+      }
+    },
+    {
+      "partyIds": [
+        "AITC",
+        "CPI"
+      ],
+      "relationship": "RIVAL",
+      "scope": {
+        "type": "GENERAL"
+      }
+    },
+    {
+      "partyIds": [
+        "AITC",
+        "CPM"
+      ],
+      "relationship": "RIVAL",
+      "scope": {
+        "type": "GENERAL"
+      }
+    },
+    {
+      "partyIds": [
+        "AITC",
+        "INC"
+      ],
+      "relationship": "RIVAL",
+      "scope": {
+        "type": "GENERAL",
+        "activation": "CONDITIONAL"
+      }
+    },
+    {
+      "partyIds": [
+        "AITC",
+        "JMM"
+      ],
+      "relationship": "RIVAL",
+      "scope": {
+        "type": "GENERAL",
+        "activation": "CONDITIONAL"
+      }
+    },
+    {
+      "partyIds": [
+        "AITC",
+        "RJD"
+      ],
+      "relationship": "RIVAL",
+      "scope": {
+        "type": "GENERAL",
+        "activation": "CONDITIONAL"
+      }
+    },
+    {
+      "partyIds": [
+        "AIUDF",
+        "BJP"
+      ],
+      "relationship": "RIVAL",
+      "scope": {
+        "type": "GENERAL"
+      }
+    },
+    {
+      "partyIds": [
+        "AIUDF",
+        "INC"
+      ],
+      "relationship": "RIVAL",
+      "scope": {
+        "type": "GENERAL",
+        "activation": "CONDITIONAL"
+      }
+    },
+    {
+      "partyIds": [
+        "AJSU",
+        "BJP"
+      ],
+      "relationship": "STRONG_ALLY",
+      "scope": {
+        "type": "GENERAL"
+      }
+    },
+    {
+      "partyIds": [
+        "AJSU",
+        "JD(U)"
+      ],
+      "relationship": "FRIENDLY",
+      "scope": {
+        "type": "GENERAL"
+      }
+    },
+    {
+      "partyIds": [
+        "AJSU",
+        "JMM"
+      ],
+      "relationship": "RIVAL",
+      "scope": {
+        "type": "GENERAL"
+      }
+    },
+    {
+      "partyIds": [
+        "AJSU",
+        "LJP"
+      ],
+      "relationship": "FRIENDLY",
+      "scope": {
+        "type": "GENERAL"
+      }
+    },
+    {
+      "partyIds": [
+        "BJD",
+        "INC"
+      ],
+      "relationship": "RIVAL",
+      "scope": {
+        "type": "GENERAL"
+      }
+    },
+    {
+      "partyIds": [
+        "BJP",
+        "BRS"
+      ],
+      "relationship": "RIVAL",
+      "scope": {
+        "type": "GENERAL"
+      }
+    },
+    {
+      "partyIds": [
+        "BJP",
+        "CPI"
+      ],
+      "relationship": "STRONG_RIVAL",
+      "scope": {
+        "type": "GENERAL"
+      }
+    },
+    {
+      "partyIds": [
+        "BJP",
+        "CPM"
+      ],
+      "relationship": "STRONG_RIVAL",
+      "scope": {
+        "type": "GENERAL"
+      }
+    },
+    {
+      "partyIds": [
+        "BJP",
+        "DMK"
+      ],
+      "relationship": "RIVAL",
+      "scope": {
+        "type": "GENERAL"
+      }
+    },
+    {
+      "partyIds": [
+        "BJP",
+        "INC"
+      ],
+      "relationship": "STRONG_RIVAL",
+      "scope": {
+        "type": "GENERAL"
+      }
+    },
+    {
+      "partyIds": [
+        "BJP",
+        "IUML"
+      ],
+      "relationship": "RIVAL",
+      "scope": {
+        "type": "GENERAL"
+      }
+    },
+    {
+      "partyIds": [
+        "BJP",
+        "JD(S)"
+      ],
+      "relationship": "STRONG_ALLY",
+      "scope": {
+        "type": "GENERAL"
+      }
+    },
+    {
+      "partyIds": [
+        "BJP",
+        "JD(U)"
+      ],
+      "relationship": "STRONG_ALLY",
+      "scope": {
+        "type": "GENERAL"
+      }
+    },
+    {
+      "partyIds": [
+        "BJP",
+        "JKNC"
+      ],
+      "relationship": "RIVAL",
+      "scope": {
+        "type": "GENERAL"
+      }
+    },
+    {
+      "partyIds": [
+        "BJP",
+        "JMM"
+      ],
+      "relationship": "RIVAL",
+      "scope": {
+        "type": "GENERAL"
+      }
+    },
+    {
+      "partyIds": [
+        "BJP",
+        "JSP"
+      ],
+      "relationship": "STRONG_ALLY",
+      "scope": {
+        "type": "GENERAL"
+      }
+    },
+    {
+      "partyIds": [
+        "BJP",
+        "LJP"
+      ],
+      "relationship": "STRONG_ALLY",
+      "scope": {
+        "type": "GENERAL"
+      }
+    },
+    {
+      "partyIds": [
+        "BJP",
+        "MNF"
+      ],
+      "relationship": "RIVAL",
+      "scope": {
+        "type": "GENERAL",
+        "activation": "CONDITIONAL"
+      }
+    },
+    {
+      "partyIds": [
+        "BJP",
+        "NCP"
+      ],
+      "relationship": "STRONG_ALLY",
+      "scope": {
+        "type": "GENERAL"
+      }
+    },
+    {
+      "partyIds": [
+        "BJP",
+        "NCP-SP"
+      ],
+      "relationship": "RIVAL",
+      "scope": {
+        "type": "GENERAL"
+      }
+    },
+    {
+      "partyIds": [
+        "BJP",
+        "NPF"
+      ],
+      "relationship": "RIVAL",
+      "scope": {
+        "type": "GENERAL",
+        "activation": "CONDITIONAL"
+      }
+    },
+    {
+      "partyIds": [
+        "BJP",
+        "NPP"
+      ],
+      "relationship": "FRIENDLY",
+      "scope": {
+        "type": "GENERAL"
+      }
+    },
+    {
+      "partyIds": [
+        "BJP",
+        "NTK"
+      ],
+      "relationship": "RIVAL",
+      "scope": {
+        "type": "GENERAL"
+      }
+    },
+    {
+      "partyIds": [
+        "BJP",
+        "PDP"
+      ],
+      "relationship": "RIVAL",
+      "scope": {
+        "type": "GENERAL",
+        "activation": "CONDITIONAL"
+      }
+    },
+    {
+      "partyIds": [
+        "BJP",
+        "PMK"
+      ],
+      "relationship": "FRIENDLY",
+      "scope": {
+        "type": "GENERAL"
+      }
+    },
+    {
+      "partyIds": [
+        "BJP",
+        "RJD"
+      ],
+      "relationship": "RIVAL",
+      "scope": {
+        "type": "GENERAL"
+      }
+    },
+    {
+      "partyIds": [
+        "BJP",
+        "RLD"
+      ],
+      "relationship": "FRIENDLY",
+      "scope": {
+        "type": "GENERAL"
+      }
+    },
+    {
+      "partyIds": [
+        "BJP",
+        "SAD"
+      ],
+      "relationship": "RIVAL",
+      "scope": {
+        "type": "GENERAL",
+        "activation": "CONDITIONAL"
+      }
+    },
+    {
+      "partyIds": [
+        "BJP",
+        "SHS"
+      ],
+      "relationship": "STRONG_ALLY",
+      "scope": {
+        "type": "GENERAL"
+      }
+    },
+    {
+      "partyIds": [
+        "BJP",
+        "SKM"
+      ],
+      "relationship": "STRONG_ALLY",
+      "scope": {
+        "type": "GENERAL"
+      }
+    },
+    {
+      "partyIds": [
+        "BJP",
+        "SP"
+      ],
+      "relationship": "RIVAL",
+      "scope": {
+        "type": "GENERAL"
+      }
+    },
+    {
+      "partyIds": [
+        "BJP",
+        "SSUBT"
+      ],
+      "relationship": "STRONG_RIVAL",
+      "scope": {
+        "type": "GENERAL"
+      }
+    },
+    {
+      "partyIds": [
+        "BJP",
+        "TDP"
+      ],
+      "relationship": "STRONG_ALLY",
+      "scope": {
+        "type": "GENERAL"
+      }
+    },
+    {
+      "partyIds": [
+        "BJP",
+        "TIPRA"
+      ],
+      "relationship": "RIVAL",
+      "scope": {
+        "type": "GENERAL",
+        "activation": "CONDITIONAL"
+      }
+    },
+    {
+      "partyIds": [
+        "BJP",
+        "ZPM"
+      ],
+      "relationship": "RIVAL",
+      "scope": {
+        "type": "GENERAL",
+        "activation": "CONDITIONAL"
+      }
+    },
+    {
+      "partyIds": [
+        "BRS",
+        "INC"
+      ],
+      "relationship": "STRONG_RIVAL",
+      "scope": {
+        "type": "GENERAL"
+      }
+    },
+    {
+      "partyIds": [
+        "BRS",
+        "TDP"
+      ],
+      "relationship": "RIVAL",
+      "scope": {
+        "type": "GENERAL"
+      }
+    },
+    {
+      "partyIds": [
+        "BRS",
+        "YSRCP"
+      ],
+      "relationship": "RIVAL",
+      "scope": {
+        "type": "GENERAL",
+        "activation": "CONDITIONAL"
+      }
+    },
+    {
+      "partyIds": [
+        "BSP",
+        "SP"
+      ],
+      "relationship": "RIVAL",
+      "scope": {
+        "type": "GENERAL"
+      }
+    },
+    {
+      "partyIds": [
+        "CPI",
+        "CPM"
+      ],
+      "relationship": "STRONG_ALLY",
+      "scope": {
+        "type": "GENERAL"
+      }
+    },
+    {
+      "partyIds": [
+        "CPI",
+        "DMK"
+      ],
+      "relationship": "STRONG_ALLY",
+      "scope": {
+        "type": "GENERAL"
+      }
+    },
+    {
+      "partyIds": [
+        "CPI",
+        "INC"
+      ],
+      "relationship": "FRIENDLY",
+      "scope": {
+        "type": "GENERAL"
+      }
+    },
+    {
+      "partyIds": [
+        "CPI",
+        "IUML"
+      ],
+      "relationship": "FRIENDLY",
+      "scope": {
+        "type": "GENERAL"
+      }
+    },
+    {
+      "partyIds": [
+        "CPI",
+        "JD(U)"
+      ],
+      "relationship": "RIVAL",
+      "scope": {
+        "type": "GENERAL",
+        "activation": "CONDITIONAL"
+      }
+    },
+    {
+      "partyIds": [
+        "CPI",
+        "JKNC"
+      ],
+      "relationship": "FRIENDLY",
+      "scope": {
+        "type": "GENERAL"
+      }
+    },
+    {
+      "partyIds": [
+        "CPI",
+        "JMM"
+      ],
+      "relationship": "FRIENDLY",
+      "scope": {
+        "type": "GENERAL"
+      }
+    },
+    {
+      "partyIds": [
+        "CPI",
+        "NCP-SP"
+      ],
+      "relationship": "FRIENDLY",
+      "scope": {
+        "type": "GENERAL"
+      }
+    },
+    {
+      "partyIds": [
+        "CPI",
+        "RJD"
+      ],
+      "relationship": "FRIENDLY",
+      "scope": {
+        "type": "GENERAL"
+      }
+    },
+    {
+      "partyIds": [
+        "CPI",
+        "SP"
+      ],
+      "relationship": "FRIENDLY",
+      "scope": {
+        "type": "GENERAL"
+      }
+    },
+    {
+      "partyIds": [
+        "CPI",
+        "SSUBT"
+      ],
+      "relationship": "FRIENDLY",
+      "scope": {
+        "type": "GENERAL"
+      }
+    },
+    {
+      "partyIds": [
+        "CPM",
+        "DMK"
+      ],
+      "relationship": "FRIENDLY",
+      "scope": {
+        "type": "GENERAL"
+      }
+    },
+    {
+      "partyIds": [
+        "CPM",
+        "INC"
+      ],
+      "relationship": "FRIENDLY",
+      "scope": {
+        "type": "GENERAL"
+      }
+    },
+    {
+      "partyIds": [
+        "CPM",
+        "IUML"
+      ],
+      "relationship": "FRIENDLY",
+      "scope": {
+        "type": "GENERAL"
+      }
+    },
+    {
+      "partyIds": [
+        "CPM",
+        "JD(U)"
+      ],
+      "relationship": "RIVAL",
+      "scope": {
+        "type": "GENERAL",
+        "activation": "CONDITIONAL"
+      }
+    },
+    {
+      "partyIds": [
+        "CPM",
+        "JKNC"
+      ],
+      "relationship": "FRIENDLY",
+      "scope": {
+        "type": "GENERAL"
+      }
+    },
+    {
+      "partyIds": [
+        "CPM",
+        "JMM"
+      ],
+      "relationship": "FRIENDLY",
+      "scope": {
+        "type": "GENERAL"
+      }
+    },
+    {
+      "partyIds": [
+        "CPM",
+        "NCP-SP"
+      ],
+      "relationship": "FRIENDLY",
+      "scope": {
+        "type": "GENERAL"
+      }
+    },
+    {
+      "partyIds": [
+        "CPM",
+        "RJD"
+      ],
+      "relationship": "FRIENDLY",
+      "scope": {
+        "type": "GENERAL"
+      }
+    },
+    {
+      "partyIds": [
+        "CPM",
+        "SP"
+      ],
+      "relationship": "FRIENDLY",
+      "scope": {
+        "type": "GENERAL"
+      }
+    },
+    {
+      "partyIds": [
+        "DMK",
+        "INC"
+      ],
+      "relationship": "STRONG_ALLY",
+      "scope": {
+        "type": "GENERAL"
+      }
+    },
+    {
+      "partyIds": [
+        "DMK",
+        "IUML"
+      ],
+      "relationship": "STRONG_ALLY",
+      "scope": {
+        "type": "GENERAL"
+      }
+    },
+    {
+      "partyIds": [
+        "DMK",
+        "JMM"
+      ],
+      "relationship": "FRIENDLY",
+      "scope": {
+        "type": "GENERAL"
+      }
+    },
+    {
+      "partyIds": [
+        "DMK",
+        "NCP-SP"
+      ],
+      "relationship": "FRIENDLY",
+      "scope": {
+        "type": "GENERAL"
+      }
+    },
+    {
+      "partyIds": [
+        "DMK",
+        "NTK"
+      ],
+      "relationship": "RIVAL",
+      "scope": {
+        "type": "GENERAL"
+      }
+    },
+    {
+      "partyIds": [
+        "DMK",
+        "PMK"
+      ],
+      "relationship": "RIVAL",
+      "scope": {
+        "type": "GENERAL"
+      }
+    },
+    {
+      "partyIds": [
+        "DMK",
+        "RJD"
+      ],
+      "relationship": "FRIENDLY",
+      "scope": {
+        "type": "GENERAL"
+      }
+    },
+    {
+      "partyIds": [
+        "DMK",
+        "SP"
+      ],
+      "relationship": "FRIENDLY",
+      "scope": {
+        "type": "GENERAL"
+      }
+    },
+    {
+      "partyIds": [
+        "DMK",
+        "SSUBT"
+      ],
+      "relationship": "FRIENDLY",
+      "scope": {
+        "type": "GENERAL"
+      }
+    },
+    {
+      "partyIds": [
+        "INC",
+        "IUML"
+      ],
+      "relationship": "STRONG_ALLY",
+      "scope": {
+        "type": "GENERAL"
+      }
+    },
+    {
+      "partyIds": [
+        "INC",
+        "JD(S)"
+      ],
+      "relationship": "RIVAL",
+      "scope": {
+        "type": "GENERAL"
+      }
+    },
+    {
+      "partyIds": [
+        "INC",
+        "JD(U)"
+      ],
+      "relationship": "RIVAL",
+      "scope": {
+        "type": "GENERAL",
+        "activation": "CONDITIONAL"
+      }
+    },
+    {
+      "partyIds": [
+        "INC",
+        "JKNC"
+      ],
+      "relationship": "STRONG_ALLY",
+      "scope": {
+        "type": "GENERAL"
+      }
+    },
+    {
+      "partyIds": [
+        "INC",
+        "JMM"
+      ],
+      "relationship": "STRONG_ALLY",
+      "scope": {
+        "type": "GENERAL"
+      }
+    },
+    {
+      "partyIds": [
+        "INC",
+        "JSP"
+      ],
+      "relationship": "RIVAL",
+      "scope": {
+        "type": "GENERAL"
+      }
+    },
+    {
+      "partyIds": [
+        "INC",
+        "NCP-SP"
+      ],
+      "relationship": "STRONG_ALLY",
+      "scope": {
+        "type": "GENERAL"
+      }
+    },
+    {
+      "partyIds": [
+        "INC",
+        "NTK"
+      ],
+      "relationship": "RIVAL",
+      "scope": {
+        "type": "GENERAL"
+      }
+    },
+    {
+      "partyIds": [
+        "INC",
+        "PDP"
+      ],
+      "relationship": "RIVAL",
+      "scope": {
+        "type": "GENERAL",
+        "activation": "CONDITIONAL"
+      }
+    },
+    {
+      "partyIds": [
+        "INC",
+        "RJD"
+      ],
+      "relationship": "STRONG_ALLY",
+      "scope": {
+        "type": "GENERAL"
+      }
+    },
+    {
+      "partyIds": [
+        "INC",
+        "RLD"
+      ],
+      "relationship": "FRIENDLY",
+      "scope": {
+        "type": "GENERAL"
+      }
+    },
+    {
+      "partyIds": [
+        "INC",
+        "SAD"
+      ],
+      "relationship": "RIVAL",
+      "scope": {
+        "type": "GENERAL"
+      }
+    },
+    {
+      "partyIds": [
+        "INC",
+        "SP"
+      ],
+      "relationship": "STRONG_ALLY",
+      "scope": {
+        "type": "GENERAL"
+      }
+    },
+    {
+      "partyIds": [
+        "INC",
+        "SSUBT"
+      ],
+      "relationship": "STRONG_ALLY",
+      "scope": {
+        "type": "GENERAL"
+      }
+    },
+    {
+      "partyIds": [
+        "INC",
+        "TDP"
+      ],
+      "relationship": "RIVAL",
+      "scope": {
+        "type": "GENERAL"
+      }
+    },
+    {
+      "partyIds": [
+        "INC",
+        "TIPRA"
+      ],
+      "relationship": "RIVAL",
+      "scope": {
+        "type": "GENERAL",
+        "activation": "CONDITIONAL"
+      }
+    },
+    {
+      "partyIds": [
+        "INC",
+        "YSRCP"
+      ],
+      "relationship": "RIVAL",
+      "scope": {
+        "type": "GENERAL"
+      }
+    },
+    {
+      "partyIds": [
+        "INC",
+        "ZPM"
+      ],
+      "relationship": "RIVAL",
+      "scope": {
+        "type": "GENERAL",
+        "activation": "CONDITIONAL"
+      }
+    },
+    {
+      "partyIds": [
+        "IUML",
+        "RJD"
+      ],
+      "relationship": "FRIENDLY",
+      "scope": {
+        "type": "GENERAL"
+      }
+    },
+    {
+      "partyIds": [
+        "IUML",
+        "SP"
+      ],
+      "relationship": "FRIENDLY",
+      "scope": {
+        "type": "GENERAL"
+      }
+    },
+    {
+      "partyIds": [
+        "JD(S)",
+        "JD(U)"
+      ],
+      "relationship": "FRIENDLY",
+      "scope": {
+        "type": "GENERAL"
+      }
+    },
+    {
+      "partyIds": [
+        "JD(S)",
+        "NCP"
+      ],
+      "relationship": "FRIENDLY",
+      "scope": {
+        "type": "GENERAL"
+      }
+    },
+    {
+      "partyIds": [
+        "JD(S)",
+        "SHS"
+      ],
+      "relationship": "FRIENDLY",
+      "scope": {
+        "type": "GENERAL"
+      }
+    },
+    {
+      "partyIds": [
+        "JD(S)",
+        "TDP"
+      ],
+      "relationship": "FRIENDLY",
+      "scope": {
+        "type": "GENERAL"
+      }
+    },
+    {
+      "partyIds": [
+        "JD(U)",
+        "JSP"
+      ],
+      "relationship": "FRIENDLY",
+      "scope": {
+        "type": "GENERAL"
+      }
+    },
+    {
+      "partyIds": [
+        "JD(U)",
+        "LJP"
+      ],
+      "relationship": "FRIENDLY",
+      "scope": {
+        "type": "GENERAL"
+      }
+    },
+    {
+      "partyIds": [
+        "JD(U)",
+        "NCP"
+      ],
+      "relationship": "FRIENDLY",
+      "scope": {
+        "type": "GENERAL"
+      }
+    },
+    {
+      "partyIds": [
+        "JD(U)",
+        "RJD"
+      ],
+      "relationship": "RIVAL",
+      "scope": {
+        "type": "GENERAL"
+      }
+    },
+    {
+      "partyIds": [
+        "JD(U)",
+        "RLD"
+      ],
+      "relationship": "FRIENDLY",
+      "scope": {
+        "type": "GENERAL"
+      }
+    },
+    {
+      "partyIds": [
+        "JD(U)",
+        "SHS"
+      ],
+      "relationship": "FRIENDLY",
+      "scope": {
+        "type": "GENERAL"
+      }
+    },
+    {
+      "partyIds": [
+        "JD(U)",
+        "TDP"
+      ],
+      "relationship": "FRIENDLY",
+      "scope": {
+        "type": "GENERAL"
+      }
+    },
+    {
+      "partyIds": [
+        "JKNC",
+        "PDP"
+      ],
+      "relationship": "RIVAL",
+      "scope": {
+        "type": "GENERAL",
+        "activation": "CONDITIONAL"
+      }
+    },
+    {
+      "partyIds": [
+        "JKNC",
+        "RJD"
+      ],
+      "relationship": "FRIENDLY",
+      "scope": {
+        "type": "GENERAL"
+      }
+    },
+    {
+      "partyIds": [
+        "JKNC",
+        "SP"
+      ],
+      "relationship": "FRIENDLY",
+      "scope": {
+        "type": "GENERAL"
+      }
+    },
+    {
+      "partyIds": [
+        "JMM",
+        "NCP-SP"
+      ],
+      "relationship": "FRIENDLY",
+      "scope": {
+        "type": "GENERAL"
+      }
+    },
+    {
+      "partyIds": [
+        "JMM",
+        "RJD"
+      ],
+      "relationship": "STRONG_ALLY",
+      "scope": {
+        "type": "GENERAL"
+      }
+    },
+    {
+      "partyIds": [
+        "JMM",
+        "SP"
+      ],
+      "relationship": "FRIENDLY",
+      "scope": {
+        "type": "GENERAL"
+      }
+    },
+    {
+      "partyIds": [
+        "JMM",
+        "SSUBT"
+      ],
+      "relationship": "FRIENDLY",
+      "scope": {
+        "type": "GENERAL"
+      }
+    },
+    {
+      "partyIds": [
+        "JSP",
+        "LJP"
+      ],
+      "relationship": "FRIENDLY",
+      "scope": {
+        "type": "GENERAL"
+      }
+    },
+    {
+      "partyIds": [
+        "JSP",
+        "NCP"
+      ],
+      "relationship": "FRIENDLY",
+      "scope": {
+        "type": "GENERAL"
+      }
+    },
+    {
+      "partyIds": [
+        "JSP",
+        "SHS"
+      ],
+      "relationship": "FRIENDLY",
+      "scope": {
+        "type": "GENERAL"
+      }
+    },
+    {
+      "partyIds": [
+        "JSP",
+        "TDP"
+      ],
+      "relationship": "STRONG_ALLY",
+      "scope": {
+        "type": "GENERAL"
+      }
+    },
+    {
+      "partyIds": [
+        "JSP",
+        "YSRCP"
+      ],
+      "relationship": "STRONG_RIVAL",
+      "scope": {
+        "type": "GENERAL"
+      }
+    },
+    {
+      "partyIds": [
+        "LJP",
+        "NCP"
+      ],
+      "relationship": "FRIENDLY",
+      "scope": {
+        "type": "GENERAL"
+      }
+    },
+    {
+      "partyIds": [
+        "LJP",
+        "RJD"
+      ],
+      "relationship": "RIVAL",
+      "scope": {
+        "type": "GENERAL"
+      }
+    },
+    {
+      "partyIds": [
+        "LJP",
+        "RLD"
+      ],
+      "relationship": "FRIENDLY",
+      "scope": {
+        "type": "GENERAL"
+      }
+    },
+    {
+      "partyIds": [
+        "LJP",
+        "SHS"
+      ],
+      "relationship": "FRIENDLY",
+      "scope": {
+        "type": "GENERAL"
+      }
+    },
+    {
+      "partyIds": [
+        "LJP",
+        "TDP"
+      ],
+      "relationship": "FRIENDLY",
+      "scope": {
+        "type": "GENERAL"
+      }
+    },
+    {
+      "partyIds": [
+        "MNF",
+        "NPP"
+      ],
+      "relationship": "RIVAL",
+      "scope": {
+        "type": "GENERAL",
+        "activation": "CONDITIONAL"
+      }
+    },
+    {
+      "partyIds": [
+        "MNF",
+        "ZPM"
+      ],
+      "relationship": "RIVAL",
+      "scope": {
+        "type": "GENERAL"
+      }
+    },
+    {
+      "partyIds": [
+        "NCP",
+        "NCP-SP"
+      ],
+      "relationship": "RIVAL",
+      "scope": {
+        "type": "GENERAL"
+      }
+    },
+    {
+      "partyIds": [
+        "NCP",
+        "SHS"
+      ],
+      "relationship": "FRIENDLY",
+      "scope": {
+        "type": "GENERAL"
+      }
+    },
+    {
+      "partyIds": [
+        "NCP",
+        "TDP"
+      ],
+      "relationship": "FRIENDLY",
+      "scope": {
+        "type": "GENERAL"
+      }
+    },
+    {
+      "partyIds": [
+        "NCP-SP",
+        "RJD"
+      ],
+      "relationship": "FRIENDLY",
+      "scope": {
+        "type": "GENERAL"
+      }
+    },
+    {
+      "partyIds": [
+        "NCP-SP",
+        "SHS"
+      ],
+      "relationship": "RIVAL",
+      "scope": {
+        "type": "GENERAL"
+      }
+    },
+    {
+      "partyIds": [
+        "NCP-SP",
+        "SP"
+      ],
+      "relationship": "FRIENDLY",
+      "scope": {
+        "type": "GENERAL"
+      }
+    },
+    {
+      "partyIds": [
+        "NCP-SP",
+        "SSUBT"
+      ],
+      "relationship": "STRONG_ALLY",
+      "scope": {
+        "type": "GENERAL"
+      }
+    },
+    {
+      "partyIds": [
+        "NPF",
+        "NPP"
+      ],
+      "relationship": "RIVAL",
+      "scope": {
+        "type": "GENERAL",
+        "activation": "CONDITIONAL"
+      }
+    },
+    {
+      "partyIds": [
+        "NPP",
+        "TIPRA"
+      ],
+      "relationship": "RIVAL",
+      "scope": {
+        "type": "GENERAL",
+        "activation": "CONDITIONAL"
+      }
+    },
+    {
+      "partyIds": [
+        "NTK",
+        "PMK"
+      ],
+      "relationship": "RIVAL",
+      "scope": {
+        "type": "GENERAL"
+      }
+    },
+    {
+      "partyIds": [
+        "PDP",
+        "SP"
+      ],
+      "relationship": "RIVAL",
+      "scope": {
+        "type": "GENERAL",
+        "activation": "CONDITIONAL"
+      }
+    },
+    {
+      "partyIds": [
+        "RJD",
+        "SP"
+      ],
+      "relationship": "STRONG_ALLY",
+      "scope": {
+        "type": "GENERAL"
+      }
+    },
+    {
+      "partyIds": [
+        "RJD",
+        "SSUBT"
+      ],
+      "relationship": "FRIENDLY",
+      "scope": {
+        "type": "GENERAL"
+      }
+    },
+    {
+      "partyIds": [
+        "RLD",
+        "SP"
+      ],
+      "relationship": "RIVAL",
+      "scope": {
+        "type": "GENERAL",
+        "activation": "CONDITIONAL"
+      }
+    },
+    {
+      "partyIds": [
+        "SDF",
+        "SKM"
+      ],
+      "relationship": "RIVAL",
+      "scope": {
+        "type": "GENERAL"
+      }
+    },
+    {
+      "partyIds": [
+        "SHS",
+        "SSUBT"
+      ],
+      "relationship": "RIVAL",
+      "scope": {
+        "type": "GENERAL"
+      }
+    },
+    {
+      "partyIds": [
+        "SHS",
+        "TDP"
+      ],
+      "relationship": "FRIENDLY",
+      "scope": {
+        "type": "GENERAL"
+      }
+    },
+    {
+      "partyIds": [
+        "SP",
+        "SSUBT"
+      ],
+      "relationship": "FRIENDLY",
+      "scope": {
+        "type": "GENERAL"
+      }
+    },
+    {
+      "partyIds": [
+        "TDP",
+        "YSRCP"
+      ],
+      "relationship": "STRONG_RIVAL",
+      "scope": {
+        "type": "GENERAL"
+      }
+    },
+    {
+      "partyIds": [
+        "JSP",
+        "TDP"
+      ],
+      "relationship": "STRONG_ALLY",
+      "scope": {
+        "type": "STATES",
+        "regions": [
+          "ANDHRA PRADESH"
+        ]
+      }
+    },
+    {
+      "partyIds": [
+        "TDP",
+        "YSRCP"
+      ],
+      "relationship": "STRONG_RIVAL",
+      "scope": {
+        "type": "STATES",
+        "regions": [
+          "ANDHRA PRADESH"
+        ]
+      }
+    },
+    {
+      "partyIds": [
+        "JSP",
+        "YSRCP"
+      ],
+      "relationship": "STRONG_RIVAL",
+      "scope": {
+        "type": "STATES",
+        "regions": [
+          "ANDHRA PRADESH"
+        ]
+      }
+    },
+    {
+      "partyIds": [
+        "BJP",
+        "YSRCP"
+      ],
+      "relationship": "NEUTRAL",
+      "scope": {
+        "type": "STATES",
+        "regions": [
+          "ANDHRA PRADESH"
+        ]
+      }
+    },
+    {
+      "partyIds": [
+        "BRS",
+        "INC"
+      ],
+      "relationship": "STRONG_RIVAL",
+      "scope": {
+        "type": "STATES",
+        "regions": [
+          "TELANGANA"
+        ]
+      }
+    },
+    {
+      "partyIds": [
+        "BJP",
+        "BRS"
+      ],
+      "relationship": "RIVAL",
+      "scope": {
+        "type": "STATES",
+        "regions": [
+          "TELANGANA"
+        ]
+      }
+    },
+    {
+      "partyIds": [
+        "AIADMK",
+        "DMK"
+      ],
+      "relationship": "STRONG_RIVAL",
+      "scope": {
+        "type": "STATES",
+        "regions": [
+          "TAMIL NADU"
+        ]
+      }
+    },
+    {
+      "partyIds": [
+        "BJP",
+        "DMK"
+      ],
+      "relationship": "RIVAL",
+      "scope": {
+        "type": "STATES",
+        "regions": [
+          "TAMIL NADU"
+        ]
+      }
+    },
+    {
+      "partyIds": [
+        "SHS",
+        "SSUBT"
+      ],
+      "relationship": "STRONG_RIVAL",
+      "scope": {
+        "type": "STATES",
+        "regions": [
+          "MAHARASHTRA"
+        ]
+      }
+    },
+    {
+      "partyIds": [
+        "NCP",
+        "NCP-SP"
+      ],
+      "relationship": "STRONG_RIVAL",
+      "scope": {
+        "type": "STATES",
+        "regions": [
+          "MAHARASHTRA"
+        ]
+      }
+    },
+    {
+      "partyIds": [
+        "AJSU",
+        "JMM"
+      ],
+      "relationship": "RIVAL",
+      "scope": {
+        "type": "STATES",
+        "regions": [
+          "JHARKHAND"
+        ]
+      }
+    },
+    {
+      "partyIds": [
+        "AITC",
+        "INC"
+      ],
+      "relationship": "RIVAL",
+      "scope": {
+        "type": "STATES",
+        "regions": [
+          "WEST BENGAL"
+        ],
+        "activation": "CONDITIONAL"
+      }
+    },
+    {
+      "partyIds": [
+        "AITC",
+        "CPM"
+      ],
+      "relationship": "RIVAL",
+      "scope": {
+        "type": "STATES",
+        "regions": [
+          "WEST BENGAL"
+        ]
+      }
+    },
+    {
+      "partyIds": [
+        "CPI",
+        "INC"
+      ],
+      "relationship": "RIVAL",
+      "scope": {
+        "type": "STATES",
+        "regions": [
+          "KERALA"
+        ]
+      }
+    },
+    {
+      "partyIds": [
+        "CPM",
+        "INC"
+      ],
+      "relationship": "RIVAL",
+      "scope": {
+        "type": "STATES",
+        "regions": [
+          "KERALA"
+        ]
+      }
+    },
+    {
+      "partyIds": [
+        "CPI",
+        "IUML"
+      ],
+      "relationship": "RIVAL",
+      "scope": {
+        "type": "STATES",
+        "regions": [
+          "KERALA"
+        ]
+      }
+    },
+    {
+      "partyIds": [
+        "CPM",
+        "IUML"
+      ],
+      "relationship": "RIVAL",
+      "scope": {
+        "type": "STATES",
+        "regions": [
+          "KERALA"
+        ]
+      }
+    },
+    {
+      "partyIds": [
+        "JKNC",
+        "PDP"
+      ],
+      "relationship": "RIVAL",
+      "scope": {
+        "type": "STATES",
+        "regions": [
+          "JAMMU & KASHMIR"
+        ],
+        "activation": "CONDITIONAL"
+      }
+    },
+    {
+      "partyIds": [
+        "SDF",
+        "SKM"
+      ],
+      "relationship": "STRONG_RIVAL",
+      "scope": {
+        "type": "STATES",
+        "regions": [
+          "SIKKIM"
+        ]
+      }
+    },
+    {
+      "partyIds": [
+        "MNF",
+        "ZPM"
+      ],
+      "relationship": "STRONG_RIVAL",
+      "scope": {
+        "type": "STATES",
+        "regions": [
+          "MIZORAM"
+        ]
+      }
+    },
+    {
+      "partyIds": [
+        "AAP",
+        "INC"
+      ],
+      "relationship": "RIVAL",
+      "scope": {
+        "type": "STATES",
+        "regions": [
+          "DELHI"
+        ],
+        "activation": "CONDITIONAL"
+      }
+    },
+    {
+      "partyIds": [
+        "AAP",
+        "INC"
+      ],
+      "relationship": "RIVAL",
+      "scope": {
+        "type": "STATES",
+        "regions": [
+          "PUNJAB"
+        ],
+        "activation": "CONDITIONAL"
+      }
+    }
+  ]
+}

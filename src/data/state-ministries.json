@@ -1,0 +1,193 @@
+{
+  "governmentType": "STATE",
+  "governmentName": "State Government",
+  "source": "Vidhan Sabha - State Government Ministers List with Deputy Ministers.txt",
+  "ministerPoints": 4,
+  "deputyPoints": 2,
+  "totalMinisters": 35,
+  "totalDeputies": 7,
+  "ministries": [
+    {
+      "id": 1,
+      "name": "Home",
+      "minister": "Home Minister",
+      "deputy": "Deputy Home Minister"
+    },
+    {
+      "id": 2,
+      "name": "Finance",
+      "minister": "Finance Minister",
+      "deputy": "Deputy Finance Minister"
+    },
+    {
+      "id": 3,
+      "name": "Revenue",
+      "minister": "Revenue Minister",
+      "deputy": "Deputy Revenue Minister"
+    },
+    {
+      "id": 4,
+      "name": "Law and Justice",
+      "minister": "Law and Justice Minister"
+    },
+    {
+      "id": 5,
+      "name": "Legislative Affairs",
+      "minister": "Legislative Affairs Minister"
+    },
+    {
+      "id": 6,
+      "name": "General Administration",
+      "minister": "General Administration Minister"
+    },
+    {
+      "id": 7,
+      "name": "Roads and Buildings",
+      "minister": "Roads and Buildings Minister",
+      "deputy": "Deputy Roads and Buildings Minister"
+    },
+    {
+      "id": 8,
+      "name": "Transport",
+      "minister": "Transport Minister",
+      "deputy": "Deputy Transport Minister"
+    },
+    {
+      "id": 9,
+      "name": "Energy",
+      "minister": "Energy Minister"
+    },
+    {
+      "id": 10,
+      "name": "Irrigation",
+      "minister": "Irrigation Minister"
+    },
+    {
+      "id": 11,
+      "name": "Municipal Administration and Urban Development",
+      "minister": "Municipal Administration and Urban Development Minister"
+    },
+    {
+      "id": 12,
+      "name": "Housing",
+      "minister": "Housing Minister"
+    },
+    {
+      "id": 13,
+      "name": "Heavy & Small Industries",
+      "minister": "Heavy & Small Industries Minister"
+    },
+    {
+      "id": 14,
+      "name": "Commerce",
+      "minister": "Commerce Minister"
+    },
+    {
+      "id": 15,
+      "name": "Information Technology, Electronics and Communications",
+      "minister": "Information Technology, Electronics and Communications Minister"
+    },
+    {
+      "id": 16,
+      "name": "Prohibition and Excise",
+      "minister": "Prohibition and Excise Minister"
+    },
+    {
+      "id": 17,
+      "name": "Agriculture",
+      "minister": "Agriculture Minister"
+    },
+    {
+      "id": 18,
+      "name": "Rural Development",
+      "minister": "Rural Development Minister"
+    },
+    {
+      "id": 19,
+      "name": "Panchayat Raj",
+      "minister": "Panchayat Raj Minister"
+    },
+    {
+      "id": 20,
+      "name": "Animal Husbandry, Dairy Development and Fisheries",
+      "minister": "Animal Husbandry, Dairy Development and Fisheries Minister"
+    },
+    {
+      "id": 21,
+      "name": "Cooperation and Marketing",
+      "minister": "Cooperation and Marketing Minister"
+    },
+    {
+      "id": 22,
+      "name": "Food and Civil Supplies",
+      "minister": "Food and Civil Supplies Minister"
+    },
+    {
+      "id": 23,
+      "name": "School Education and Higher Education",
+      "minister": "Education Minister",
+      "deputy": "Deputy Education Minister"
+    },
+    {
+      "id": 24,
+      "name": "Health, Medical and Family Welfare",
+      "minister": "Health Minister",
+      "deputy": "Deputy Health Minister"
+    },
+    {
+      "id": 25,
+      "name": "Women and Child Welfare",
+      "minister": "Women and Child Welfare Minister"
+    },
+    {
+      "id": 26,
+      "name": "Social Welfare",
+      "minister": "Social Welfare Minister"
+    },
+    {
+      "id": 27,
+      "name": "BC Welfare",
+      "minister": "BC Welfare Minister"
+    },
+    {
+      "id": 28,
+      "name": "SC and ST Welfare",
+      "minister": "SC and ST Welfare Minister"
+    },
+    {
+      "id": 29,
+      "name": "Tourism and Culture",
+      "minister": "Tourism and Culture Minister"
+    },
+    {
+      "id": 30,
+      "name": "Endowment",
+      "minister": "Endowment Minister"
+    },
+    {
+      "id": 31,
+      "name": "Cinematography",
+      "minister": "Cinematography Minister"
+    },
+    {
+      "id": 32,
+      "name": "Handlooms and Textiles",
+      "minister": "Handlooms and Textiles Minister"
+    },
+    {
+      "id": 33,
+      "name": "Youth Affairs and Sports",
+      "minister": "Youth Affairs and Sports Minister"
+    },
+    {
+      "id": 34,
+      "name": "Labour and Employment",
+      "minister": "Labour and Employment Minister"
+    },
+    {
+      "id": 35,
+      "name": "Food Processing Industries",
+      "minister": "Food Processing Industries Minister"
+    }
+  ]
+}
