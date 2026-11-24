@@ -21,10 +21,11 @@ export function getStages(kind: ElectionKind, hung = false): GameStage[] {
       label: "Setup",
       href: "/elections/setup",
       match: ["/elections/setup", base, `${base}/new-game`, `${base}/game`, `${base}/seat-allocation`],
-      exclude: [`${base}/campaign`, `${base}/voting`, `${base}/results`, `${base}/government-formation`],
+      exclude: [`${base}/campaign`, `${base}/voting`, `${base}/counting`, `${base}/results`, `${base}/government-formation`],
     },
     { id: "campaign", label: "Campaign", href: `${base}/campaign`, match: [`${base}/campaign`] },
     { id: "voting", label: "Voting", href: `${base}/voting`, match: [`${base}/voting`] },
+    { id: "counting", label: "Counting", href: `${base}/counting`, match: [`${base}/counting`] },
     { id: "results", label: "Results", href: `${base}/results`, match: [`${base}/results`] },
   ];
   if (kind === "lok-sabha" || hung) {
