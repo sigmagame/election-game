@@ -70,6 +70,13 @@ export function CountingBoard(props: CountingBoardProps) {
   const [seatId, setSeatId] = useState<string | null>(null);
   const [filter, setFilter] = useState<SeatFilter>("all");
   const finished = clock >= last;
+  // When counting ends, Pause and Skip to end fade out first, then the results button takes their place.
+  const [resultsShown, setResultsShown] = useState(false);
+  useEffect(() => {
+    if (!finished) return;
+    const timer = window.setTimeout(() => setResultsShown(true), 700);
+    return () => window.clearTimeout(timer);
+  }, [finished]);
 
   // Counting runs on its own: one round per tick, every seat in the election at once.
   useEffect(() => {
@@ -199,8 +206,14 @@ export function CountingBoard(props: CountingBoardProps) {
               </button>
             ))}
           </div>
-          <Button variant="outline" disabled={finished} onClick={() => setPaused((p) => !p)}>{paused ? "Resume" : "Pause"}</Button>
-          <Button variant="outline" disabled={finished} onClick={() => setClock(last)}>Skip to end</Button>
+          {resultsShown ? (
+            <Button asChild className="animate-in fade-in bg-brand text-brand-foreground duration-500 hover:bg-brand/90"><Link href={resultsHref}>View election results →</Link></Button>
+          ) : (
+            <>
+              <Button variant="outline" disabled={finished} onClick={() => setPaused((p) => !p)} className="transition-opacity duration-700 disabled:opacity-0">{paused ? "Resume" : "Pause"}</Button>
+              <Button variant="outline" disabled={finished} onClick={() => setClock(last)} className="transition-opacity duration-700 disabled:opacity-0">Skip to end</Button>
+            </>
+          )}
         </div>
       </div>
 
@@ -387,7 +400,6 @@ export function CountingBoard(props: CountingBoardProps) {
               : "Every seat has finished its own rounds and shows its final margin. Seats where no party has over half the votes are won on the last round by the biggest count. The tally then shows only seats won."}
           </p>
         </div>
-        {finished ? <Button asChild size="lg" className="bg-brand text-brand-foreground hover:bg-brand/90"><Link href={resultsHref}>View election results →</Link></Button> : null}
       </section>
       <p className="text-xs text-muted-foreground">Counting uses the votes already cast. <Link href={votingHref} className="underline underline-offset-4">Back to voting</Link></p>
     </main>
