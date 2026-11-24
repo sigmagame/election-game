@@ -1,0 +1,14 @@
+import { generateAssemblyField } from "../src/engine/assembly-game-engine";
+let bad = 0; const t = (n: string, ok: boolean) => { if (!ok) bad++; console.log(ok ? "PASS" : "FAIL", n); };
+const names = (setup: Parameters<typeof generateAssemblyField>[0]) => (generateAssemblyField(setup, 175).stateAllianceGroups["Andhra Pradesh"] ?? []).map((g) => g.name);
+const a = names({ state: "Andhra Pradesh", playerPartyId: "TDP", allianceName: "N.D.A", partyIds: ["TDP", "BJP"] });
+console.log(a);
+t("player front named N.D.A is present", a.includes("N.D.A"));
+t("no second group is called NDA beside it", !a.includes("NDA"));
+const b = names({ state: "Andhra Pradesh", playerPartyId: "BJP", allianceName: "N.D.A", partyIds: ["BJP", "TDP"] });
+console.log(b);
+t("BJP player: no leftover NDA group", !b.includes("NDA"));
+const c = names({ state: "Andhra Pradesh", playerPartyId: "TDP", allianceName: "Sunrise Front", partyIds: ["TDP", "JSP"] });
+console.log(c);
+t("other names unaffected", c.includes("Sunrise Front"));
+process.exit(bad ? 1 : 0);

@@ -6,7 +6,7 @@ import { useEffect, useMemo, useState } from "react";
 import { ArrowRight } from "lucide-react";
 import { PartyMark } from "@/components/party-mark";
 import { AllianceName } from "@/components/alliance-name";
-import { allianceShort } from "@/lib/party-style";
+import { allianceFull, allianceShort } from "@/lib/party-style";
 import WorkspacePage from "@/components/election-workspace/workspace-page";
 import { loadAssemblyGame, type AssemblyGameSave } from "@/engine/assembly-game-engine";
 import {
@@ -122,7 +122,7 @@ export default function AssemblyGovernmentFormationPage() {
 
   const rulingIsPlayer = ruling.name === outcome.playerGroupName;
   const gname = (name: string, isPlayer: boolean, className = "") =>
-    isPlayer ? <span className={className}>{name}</span> : <AllianceName name={name} className={className} />;
+    isPlayer && !allianceFull(name) ? <span className={className}>{name}</span> : <AllianceName name={name} className={className} />;
   const rulingShort = rulingIsPlayer ? ruling.name : allianceShort(ruling.name);
   const spare = ruling.seats - outcome.majority;
   const cmParty = outcome.chiefMinisterPartyId;
@@ -152,7 +152,7 @@ export default function AssemblyGovernmentFormationPage() {
       <section className="mt-5 rounded-2xl border border-border bg-card p-6">
         <p className="text-xs font-bold text-success">Majority secured</p>
         <h2 className="mt-2 text-2xl font-black">{gname(ruling.name, rulingIsPlayer)}</h2>
-        <p className="mt-1 text-3xl font-black tabular-nums text-success">{ruling.seats} / {outcome.majority} seats</p>
+        <p className="mt-1 text-3xl font-black tabular-nums text-success">{ruling.seats} / {game.totalConstituencies} seats</p>
         <div className="mt-3 h-2 overflow-hidden rounded-full bg-muted"><div className="h-full rounded-full bg-brand" style={{ width: "100%" }} /></div>
         <p className="mt-3 text-sm text-foreground/80">
           Chief Minister&apos;s party: <b>{cmParty ? nameOf(cmParty) : "—"}</b> · Valid vote share {pct(validVotes ? (rulingVotes / validVotes) * 100 : 0)}
@@ -180,7 +180,7 @@ export default function AssemblyGovernmentFormationPage() {
       </section>
 
       <section className="mt-5 rounded-2xl border border-border bg-card p-5">
-        <h2 className="text-lg font-bold">Parties or Alliances in Opposition</h2>
+        <h2 className="text-lg font-bold">Party/Alliance in Opposition</h2>
         <div className="mt-3 space-y-2">
           {others.map((group) => (
             <div key={group.name} className="flex items-center justify-between gap-3 rounded-lg bg-background px-3.5 py-3 text-sm">

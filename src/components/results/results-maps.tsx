@@ -5,7 +5,7 @@ import { ElectionMap } from "@/components/map/election-map";
 import { PartyMark } from "@/components/party-mark";
 import { partyColor } from "@/lib/party-style";
 import { AllianceName } from "@/components/alliance-name";
-import { allianceShort } from "@/lib/party-style";
+import { allianceFull, allianceShort } from "@/lib/party-style";
 
 export type MapSeat = { constituencyId: string; name: string; winnerPartyId: string; winnerName: string; allianceName: string; margin: number };
 export type MapGroup = { name: string; seats: number; color: string };
@@ -74,7 +74,7 @@ export function ResultsMaps({
               ? groups.filter((g) => g.seats > 0).map((g) => (
                   <li key={g.name} className="flex items-center gap-3 rounded-lg border border-border bg-background px-3 py-2.5 text-sm">
                     <span className="size-3.5 shrink-0 rounded" style={{ background: g.color }} />
-                    {g.name === playerGroupName ? <span className="flex-1 font-semibold">{g.name}</span> : <AllianceName name={g.name} className="flex-1 font-semibold" />}
+                    {g.name === playerGroupName && !allianceFull(g.name) ? <span className="flex-1 font-semibold">{g.name}</span> : <AllianceName name={g.name} className="flex-1 font-semibold" />}
                     <span className="font-bold tabular-nums">{g.seats}</span>
                   </li>
                 ))

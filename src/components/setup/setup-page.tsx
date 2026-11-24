@@ -143,6 +143,9 @@ export function SetupPage() {
   const [colorMode, setColorMode] = useState<"party" | "custom">("party");
   const [customColor, setCustomColor] = useState("#4F46E5");
   const [others, setOthers] = useState<string[]>([]);
+  // Assembly: inviting BJP (or INC) offers the N.D.A (or I.N.D.I.A) name for the alliance.
+  const [nameChoice, setNameChoice] = useState<"bloc" | "own" | null>(null);
+  const [askName, setAskName] = useState(false);
   const [seatsReady, setSeatsReady] = useState(false);
   const [error, setError] = useState("");
 
@@ -204,10 +207,22 @@ export function SetupPage() {
   const isCustom = alliance === "Create New Alliance";
   const predefined = alliance === "NDA" || alliance === "INDIA" ? alliance : "";
   const predefinedCheck = party && predefined ? predefinedCompatibility(party, predefined) : { allowed: true, warning: "" };
-  const customNeeds = isCustom ? (customName.trim() === "" ? "Enter an alliance name" : others.length === 0 ? "Select at least one partner party" : "") : "";
+  // BJP and INC lead the N.D.A and I.N.D.I.A. As the player's party they fix the alliance name; as an invited partner they offer it.
+  const lockedName = kind === "assembly" ? (party === "BJP" ? "N.D.A" : party === "INC" ? "I.N.D.I.A" : "") : "";
+  const partnerBloc = kind === "assembly" && !lockedName ? (others.includes("BJP") ? "N.D.A" : others.includes("INC") ? "I.N.D.I.A" : "") : "";
+  const blocFull = (name: string) => (name === "N.D.A" ? "National Democratic Alliance" : "Indian National Developmental Inclusive Alliance");
+  const effectiveName = lockedName || (partnerBloc && nameChoice === "bloc" ? partnerBloc : customName.trim());
+  const nameNeeds = lockedName ? "" : partnerBloc && nameChoice === null ? `Choose ${partnerBloc} or your own alliance name` : effectiveName === "" ? "Enter an alliance name" : "";
+  const customNeeds = isCustom ? (nameNeeds || (others.length === 0 ? "Select at least one partner party" : "")) : "";
   const canConfirm = alliance !== "" && predefinedCheck.allowed && !customNeeds;
 
+  useEffect(() => {
+    // eslint-disable-next-line react-hooks/set-state-in-effect -- forgets the name choice once the inviting party is removed
+    if (!partnerBloc) setNameChoice(null);
+  }, [partnerBloc]);
+
   function chooseKind(next: Kind) {
+    setNameChoice(null);
     setKind(next);
     setState("");
     setParty("");
@@ -221,6 +236,10 @@ export function SetupPage() {
     if (!pairCompatibility(party, id, kind ?? "lok-sabha", state).allowed) return;
     if (others.some((existing) => !pairCompatibility(id, existing, kind ?? "lok-sabha", state).allowed)) return;
     setOthers((current) => [...current, id]);
+    if (kind === "assembly" && (id === "BJP" || id === "INC") && !lockedName) {
+      setNameChoice(null);
+      setAskName(true);
+    }
   }
 
   const chosenColor = colorMode === "party" ? partyColor(party) : customColor;
@@ -245,7 +264,7 @@ export function SetupPage() {
             state,
             playerPartyId: party,
             allianceType: isCustom ? "alliance" : "independent",
-            allianceName: isCustom ? customName.trim() : "Independent",
+            allianceName: isCustom ? effectiveName : "Independent",
             partyIds: [party, ...(isCustom ? others : [])],
             ...(isCustom ? { allianceColor: chosenColor } : {}),
           }),
@@ -315,6 +334,20 @@ export function SetupPage() {
             </div>
           ))}
         </div>
+        </DialogContent>
+      </Dialog>
+      <Dialog open={askName && partnerBloc !== ""} onOpenChange={setAskName}>
+        <DialogContent className="sm:max-w-md">
+          <DialogHeader>
+            <DialogTitle>Name your alliance</DialogTitle>
+            <DialogDescription>
+              {partnerBloc === "N.D.A" ? "BJP" : "INC"} leads the {partnerBloc}. Use {partnerBloc} as your alliance name, or give it a name of your own?
+            </DialogDescription>
+          </DialogHeader>
+          <div className="flex flex-wrap justify-end gap-2">
+            <Button variant="outline" onClick={() => { setNameChoice("own"); setAskName(false); }}>Choose my own name</Button>
+            <Button onClick={() => { setNameChoice("bloc"); setAskName(false); }}>Use {partnerBloc}</Button>
+          </div>
         </DialogContent>
       </Dialog>
       {/* Stepper */}
@@ -518,6 +551,7 @@ export function SetupPage() {
                       onClick={() => {
                         setAlliance(key);
                         setOthers([]);
+                        setNameChoice(null);
                       }}
                       className={`w-full rounded-xl border bg-card p-4 text-left transition disabled:cursor-not-allowed disabled:opacity-50 ${alliance === key ? "border-brand ring-2 ring-brand/30" : "border-border hover:border-brand/60"} ${key === "Independent" ? "border-dashed" : ""}`}
                     >
@@ -546,16 +580,39 @@ export function SetupPage() {
                 {alliance === "Independent" && <p className="text-sm text-muted-foreground">{partyName(party)} contests on its own. Other parties may approach you after the results.</p>}
                 {isCustom && (
                   <>
-                    <label className="block text-sm font-medium" htmlFor="alliance-name">
-                      Alliance name
-                    </label>
-                    <input
-                      id="alliance-name"
-                      value={customName}
-                      onChange={(e) => setCustomName(e.target.value)}
-                      placeholder="Enter your alliance name"
-                      className="w-full rounded-lg border border-border bg-background px-3 py-2.5 text-sm outline-none focus:border-brand"
-                    />
+                    <div className="block text-sm font-medium">Alliance name</div>
+                    {lockedName || (partnerBloc && nameChoice === "bloc") ? (
+                      <div className="rounded-lg border border-brand/40 bg-brand/5 px-3 py-2.5">
+                        <p className="font-semibold">{lockedName || partnerBloc}</p>
+                        <p className="text-xs text-muted-foreground">
+                          {blocFull(lockedName || partnerBloc)}
+                          {lockedName ? ` · fixed, because ${partyName(party)} leads it` : ""}
+                        </p>
+                        {!lockedName ? (
+                          <button type="button" onClick={() => setNameChoice("own")} className="mt-1.5 text-xs font-medium text-brand underline underline-offset-4">Use a different name</button>
+                        ) : null}
+                      </div>
+                    ) : (
+                      <>
+                        {partnerBloc ? (
+                          <div className="flex flex-wrap items-center gap-2 rounded-lg border border-border bg-background px-3 py-2 text-sm">
+                            <span className="text-muted-foreground">{nameChoice === null ? `You invited ${partnerBloc === "N.D.A" ? "BJP" : "INC"}.` : "Using your own name."}</span>
+                            <button type="button" onClick={() => setNameChoice("bloc")} className="font-medium text-brand underline underline-offset-4">Use {partnerBloc} as the name</button>
+                          </div>
+                        ) : null}
+                        <input
+                          id="alliance-name"
+                          aria-label="Alliance name"
+                          value={customName}
+                          onChange={(e) => {
+                            setCustomName(e.target.value);
+                            if (partnerBloc) setNameChoice("own");
+                          }}
+                          placeholder="Enter your alliance name"
+                          className="w-full rounded-lg border border-border bg-background px-3 py-2.5 text-sm outline-none focus:border-brand"
+                        />
+                      </>
+                    )}
                     <fieldset>
                       <legend className="mb-2 text-sm font-medium">Alliance colour</legend>
                       <div className="flex flex-wrap items-center gap-3">
@@ -618,7 +675,7 @@ export function SetupPage() {
               <div className="flex flex-wrap items-center justify-between gap-3 rounded-xl border border-border bg-card px-5 py-3 text-sm">
                 <span>
                   <b>{partyName(party)}</b> · {kind === "assembly" ? state : "Lok Sabha"} ·{" "}
-                  {isCustom ? customName || "Your alliance" : predefined || (alliance === "Independent" ? "Independent" : "Saved game")}
+                  {isCustom ? effectiveName || "Your alliance" : predefined || (alliance === "Independent" ? "Independent" : "Saved game")}
                 </span>
                 <Button variant="outline" size="sm" onClick={() => setSeatsReady(false)}>
                   Change alliance

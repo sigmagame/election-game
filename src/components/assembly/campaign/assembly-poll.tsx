@@ -8,7 +8,7 @@ import { Button } from "@/components/ui/button";
 import { PollShareList, RangeBar } from "@/components/lok-sabha/campaign/poll-projection";
 import { toCampaignGame, type AssemblyGameSave } from "@/engine/assembly-game-engine";
 import type { getLastWeeklySummary } from "@/engine/assembly-campaign-engine";
-import { allianceShort, partyColor } from "@/lib/party-style";
+import { allianceFull, allianceShort, partyColor } from "@/lib/party-style";
 import { clubRanges, projectPartyRanges, rangeText, type PartyRange } from "@/lib/seat-projection";
 import type { CampaignRegion } from "@/types/campaign-profile";
 import type { ConstituencyPartySupport, FinalCampaignReport, LokSabhaCampaignSave } from "@/types/lok-sabha-campaign";
@@ -122,9 +122,9 @@ export function useAssemblyProjection(game: AssemblyGameSave, campaign: LokSabha
 
 export type AssemblyProjection = ReturnType<typeof useAssemblyProjection>;
 
-/** The player's own alliance shows exactly as typed; rivals use the short form with the full form below. */
+/** The player's own alliance shows exactly as typed (with the full form beneath when they named it N.D.A or I.N.D.I.A); rivals use the short form with the full form below. */
 export function UnitName({ unit, className = "", block = true }: { unit: Pick<PollUnit, "name" | "isPlayer" | "alliance">; className?: string; block?: boolean }) {
-  if (unit.isPlayer || !unit.alliance) return <span className={className}>{unit.name}</span>;
+  if ((unit.isPlayer && !allianceFull(unit.name)) || !unit.alliance) return <span className={className}>{unit.name}</span>;
   return <AllianceName name={unit.name} className={className} block={block} />;
 }
 

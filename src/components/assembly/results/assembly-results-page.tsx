@@ -7,7 +7,7 @@ import { ArrowRight } from "lucide-react";
 import { AllianceName } from "@/components/alliance-name";
 import { PartyMark } from "@/components/party-mark";
 import { ResultsMaps } from "@/components/results/results-maps";
-import { allianceColor, allianceShort } from "@/lib/party-style";
+import { allianceColor, allianceFull, allianceShort } from "@/lib/party-style";
 import { ResultsOverview, StatBox } from "@/components/results/results-overview";
 import { Button } from "@/components/ui/button";
 import { getAssemblyMajority } from "@/engine/assembly-campaign-engine";
@@ -263,7 +263,7 @@ export default function AssemblyResultsPage() {
   const myAlliance = data.allianceRows.find((row) => row.name === playerGroupName);
   /** The player's own group shows exactly as typed; rival groups use the short form (N.D.A, I.N.D.I.A). */
   const shown = (name: string) => (name === playerGroupName ? name : allianceShort(name));
-  const groupName = (name: string) => (name === playerGroupName ? <span className="font-semibold">{name}</span> : <AllianceName name={name} className="font-semibold" />);
+  const groupName = (name: string) => (name === playerGroupName && !allianceFull(name) ? <span className="font-semibold">{name}</span> : <AllianceName name={name} className="font-semibold" />);
   const groupList = data.allianceRows.map((a) => {
     const parties = a.parties.map((id) => ({ name: nameOf(id), seats: data.seatsWon[id] ?? 0 })).sort((x, y) => y.seats - x.seats);
     return { name: a.name, seats: a.seats, parties, color: allianceColor(parties, a.name === playerGroupName ? game.alliance.color : undefined) };

@@ -20,7 +20,7 @@ import {
   type UnitContext,
 } from "@/engine/counting-engine";
 import type { ExitUnit } from "@/lib/exit-poll";
-import { partyColor } from "@/lib/party-style";
+import { allianceFull, partyColor } from "@/lib/party-style";
 
 type Speed = "slow" | "normal" | "fast";
 const TICK_MS: Record<Speed, number> = { slow: 1800, normal: 1000, fast: 300 };
@@ -54,7 +54,7 @@ export interface CountingBoardProps {
 
 /** Name of an alliance (N.D.A / I.N.D.I.A with full forms for the rivals) or a party contesting alone. */
 function UnitLabel({ unit, block = false }: { unit: CountUnit | Pick<ExitUnit, "name" | "alliance"> & { isPlayer?: boolean }; block?: boolean }) {
-  if (!unit.alliance || ("isPlayer" in unit && unit.isPlayer)) return <span>{unit.name}</span>;
+  if (!unit.alliance || ("isPlayer" in unit && unit.isPlayer && !allianceFull(unit.name))) return <span>{unit.name}</span>;
   return <AllianceName name={unit.name} block={block} />;
 }
 

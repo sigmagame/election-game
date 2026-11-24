@@ -4121,12 +4121,13 @@
             "ac-telangana-andole-zahirabad",
             "ac-telangana-narsapur-medak",
             "ac-telangana-zaheerabad-zahirabad",
-            "ac-telangana-sangareddy-medak",
-            "ac-telangana-tandur-chevella",
+            "ac-telangana-sangareddy-medak",           
             "ac-telangana-dubbak-medak",
-            "ac-telangana-gajwel-medak"
+            "ac-telangana-gajwel-medak",
+            "ac-telangana-tandur-chevella",
+            "ac-telangana-vicarabad-chevella"
           ],
-          "constituencyCount": 42
+          "constituencyCount": 43
         },
         {
           "id": "hyderabad",
@@ -4143,7 +4144,6 @@
             "ac-telangana-rajendranagar-chevella",
             "ac-telangana-serilingampally-chevella",
             "ac-telangana-chevella-chevella",
-            "ac-telangana-vicarabad-chevella",
             "ac-telangana-patancheru-medak",
             "ac-telangana-musheerabad-secunderabad",
             "ac-telangana-malakpet-hyderabad",
@@ -4195,7 +4195,7 @@
             "ac-telangana-thungathurthi-sc-bhongir",
             "ac-telangana-alair-bhongir"
           ],
-          "constituencyCount": 26
+          "constituencyCount": 27
         },
         {
           "id": "eastern-telangana",

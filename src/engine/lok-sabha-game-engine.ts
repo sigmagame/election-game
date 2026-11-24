@@ -829,7 +829,12 @@ function buildStateAllianceGroups(
   // BJP convenes the NDA and INC convenes INDIA. When the player leads that party but does not take its national
   // alliance (runs alone or forms a custom front), the AI parties left over are no longer that alliance: the name
   // goes with its convener, so they get a front of their own named after their strongest member.
-  const absentConvener = playerPartyId === "BJP" ? "NDA" : playerPartyId === "INC" ? "INDIA Alliance" : "";
+  // A custom front that the player named N.D.A or I.N.D.I.A is that alliance in name too, so the AI parties left over
+  // must not carry the same name beside it.
+  const namedAs = playerAlliance.name.replace(/[^a-z]/gi, "").toLowerCase();
+  const customNdaName = allianceChoice === "CUSTOM" && namedAs === "nda";
+  const customIndiaName = allianceChoice === "CUSTOM" && (namedAs === "india" || namedAs === "indiaalliance");
+  const absentConvener = playerPartyId === "BJP" || customNdaName ? "NDA" : playerPartyId === "INC" || customIndiaName ? "INDIA Alliance" : "";
   const keepsNationalAlliance = (playerPartyId === "BJP" && allianceChoice === "NDA") || (playerPartyId === "INC" && allianceChoice === "INDIA");
   if (absentConvener && !keepsNationalAlliance) {
     const strength = (id: string) => Object.values(regionalStrengths).reduce((sum, region) => sum + (region[id] ?? 0), 0);
