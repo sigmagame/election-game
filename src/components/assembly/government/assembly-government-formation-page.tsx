@@ -180,7 +180,7 @@ export default function AssemblyGovernmentFormationPage() {
       </section>
 
       <section className="mt-5 rounded-2xl border border-border bg-card p-5">
-        <h2 className="text-lg font-bold">Other groups in the Assembly</h2>
+        <h2 className="text-lg font-bold">Parties or Alliances in Opposition</h2>
         <div className="mt-3 space-y-2">
           {others.map((group) => (
             <div key={group.name} className="flex items-center justify-between gap-3 rounded-lg bg-background px-3.5 py-3 text-sm">
