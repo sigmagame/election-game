@@ -84,6 +84,7 @@ export default function LokSabhaCountingPage() {
       majority={majority}
       exitUnits={exit.national}
       resultsHref="/elections/lok-sabha/results"
+      saveKey="indian-election-game-lok-sabha-counting-save"
       votingHref="/elections/lok-sabha/voting"
     />
   );

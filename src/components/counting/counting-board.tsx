@@ -48,6 +48,8 @@ export interface CountingBoardProps {
   exitUnits: ExitUnit[];
   resultsHref: string;
   votingHref: string;
+  /** Where this game's counting progress is saved, so coming back shows the finished count instead of restarting. */
+  saveKey: string;
 }
 
 /** Name of an alliance (N.D.A / I.N.D.I.A with full forms for the rivals) or a party contesting alone. */
@@ -59,10 +61,17 @@ function UnitLabel({ unit, block = false }: { unit: CountUnit | Pick<ExitUnit, "
 const colorOf = (unit: CountUnit, ctx: UnitContext) => partyColor(unit.isPlayer && unit.alliance ? ctx.playerPartyId : unit.members[0] ?? unit.name);
 
 export function CountingBoard(props: CountingBoardProps) {
-  const { kind, state, gameId, seats, ctx, majority, exitUnits, resultsHref, votingHref } = props;
+  const { kind, state, gameId, seats, ctx, majority, exitUnits, resultsHref, votingHref, saveKey } = props;
   const counts = useMemo(() => buildCounts(gameId, seats), [gameId, seats]);
   const last = useMemo(() => longestRound(counts), [counts]);
-  const [clock, setClock] = useState(0);
+  const [clock, setClock] = useState(() => {
+    try {
+      const saved = JSON.parse(localStorage.getItem(saveKey) ?? "null") as { gameId: string; round: number } | null;
+      return saved && saved.gameId === gameId ? Math.min(Math.max(0, saved.round), longestRound(buildCounts(gameId, seats))) : 0;
+    } catch {
+      return 0;
+    }
+  });
   const [speed, setSpeed] = useState<Speed>("normal");
   const [paused, setPaused] = useState(false);
   const [tallyBy, setTallyBy] = useState<"alliance" | "party">("alliance");
@@ -71,12 +80,21 @@ export function CountingBoard(props: CountingBoardProps) {
   const [filter, setFilter] = useState<SeatFilter>("all");
   const finished = clock >= last;
   // When counting ends, Pause and Skip to end fade out first, then the results button takes their place.
-  const [resultsShown, setResultsShown] = useState(false);
+  const [resultsShown, setResultsShown] = useState(clock >= last);
   useEffect(() => {
     if (!finished) return;
     const timer = window.setTimeout(() => setResultsShown(true), 700);
     return () => window.clearTimeout(timer);
   }, [finished]);
+
+  // Progress is saved every round, so leaving and coming back shows the count as it was (or finished).
+  useEffect(() => {
+    try {
+      localStorage.setItem(saveKey, JSON.stringify({ gameId, round: clock }));
+    } catch {
+      /* storage unavailable */
+    }
+  }, [saveKey, gameId, clock]);
 
   // Counting runs on its own: one round per tick, every seat in the election at once.
   useEffect(() => {

@@ -84,6 +84,7 @@ export default function AssemblyCountingPage() {
       majority={majority}
       exitUnits={exit.national}
       resultsHref="/elections/assembly/results"
+      saveKey="indian-election-simulator:assembly-counting"
       votingHref="/elections/assembly/voting"
     />
   );
