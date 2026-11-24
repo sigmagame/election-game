@@ -262,7 +262,7 @@ export function SetupPage() {
   if (running === null) return <main className="mx-auto max-w-[1280px] px-6 py-8 text-muted-foreground">Loading…</main>;
   // Leaving step 1 would start a new game, so a game that is already running is raised first.
   function goStep(n: number) {
-    if (step === 1 && n >= 2 && running.length > 0) {
+    if (step === 1 && n >= 2 && (running?.length ?? 0) > 0) {
       setGuardOpen(true);
       return;
     }
@@ -272,7 +272,7 @@ export function SetupPage() {
   return (
     <main className="mx-auto max-w-[1280px] px-6 py-8">
       <Dialog
-        open={guardOpen && running.length > 0}
+        open={guardOpen && (running?.length ?? 0) > 0}
         onOpenChange={(open) => {
           setGuardOpen(open);
           if (!open) setConfirmDelete(null);

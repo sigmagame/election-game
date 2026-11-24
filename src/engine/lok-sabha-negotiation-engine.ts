@@ -2001,7 +2001,7 @@ export function submitNegotiationOffer(
     if (!withinTinyLimit(terms, tiny)) {
       const limit = tinyPostLimits(tiny.seats).max;
       throw new Error(
-        `${partyLabel(bloc.partyIds[0] ?? bloc.name)} has ${tiny.seats} seat${tiny.seats === 1 ? "" : "s"}, so it can be offered at most ${limit} post${limit === 1 ? "" : "s"}${rules.kind === "ASSEMBLY" ? " (Minister posts)" : tiny.pivotal ? " (one of them a Big ministry, since its seats decide the government)" : ", all Small ministries or lower"}, and not the ${rules.deputyTitle} post.`,
+        `${partyLabel(bloc.partyIds[0] ?? bloc.name)} has ${tiny.seats} seat${tiny.seats === 1 ? "" : "s"}, so it can be offered at most ${limit} post${limit === 1 ? "" : "s"}${tiny.pivotal ? " (one of them a Big ministry, since its seats decide the government)" : ", all Small ministries or lower"}, and not the ${rules.deputyTitle} post.`,
       );
     }
   }
