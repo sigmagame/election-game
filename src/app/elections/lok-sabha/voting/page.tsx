@@ -142,12 +142,12 @@ export default function LokSabhaVotingPage() {
     <VotingHeader
       title="Voting"
       subtitle={finished
-        ? "Polling is over in all phases. Results stay sealed until you open them."
+        ? "Polling is over in all phases. Counting comes next."
         : `Polling runs in ${schedule.phaseCount} phases across all ${total} constituencies. Results stay sealed until the last phase finishes.`}
       action={finished
         ? <>
             <Button size="lg" onClick={() => setExitOpen(true)} className="bg-brand text-brand-foreground hover:bg-brand/90">Exit poll</Button>
-            <Button size="lg" variant="outline" asChild><Link href="/elections/lok-sabha/results">View election results →</Link></Button>
+            <Button size="lg" variant="outline" asChild><Link href="/elections/lok-sabha/counting">Start counting →</Link></Button>
           </>
         : <><SpeedControl speed={speed} onChange={setSpeed} /><Button disabled={started} onClick={() => setStarted(true)}>{started ? "Polling…" : hasProgress ? "Resume voting" : "Start voting"}</Button></>}
     />
@@ -167,7 +167,7 @@ export default function LokSabhaVotingPage() {
         <UpdatesFeed items={updates} />
       </div>
     </div>
-    {finished && <Notice tone="info">Voting is complete. All {total} constituencies have voted. Open the exit poll to see the projected seats, or go straight to the results.</Notice>}
+    {finished && <Notice tone="info">Voting is complete. All {total} constituencies have voted. Open the exit poll to see the projected seats, or start counting.</Notice>}
     <p className="text-xs text-muted-foreground">Voting data is saved locally for this game. <Link href="/elections/lok-sabha/campaign" className="underline underline-offset-4">Campaign report</Link></p>
   </main>;
 }

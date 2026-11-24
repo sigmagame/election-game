@@ -142,12 +142,12 @@ export default function AssemblyVotingPage() {
       <VotingHeader
         title="Voting"
         subtitle={finished
-          ? `Polling is over in all ${plan.length} regions of ${game.state}. Results stay sealed until you open them.`
+          ? `Polling is over in all ${plan.length} regions of ${game.state}. Counting comes next.`
           : `${game.state}: voting takes place in a single day. Polling rolls across the state region by region. Vote totals and winners stay sealed until it closes.`}
         action={finished
           ? <>
               <Button size="lg" onClick={() => setExitOpen(true)} className="bg-brand text-brand-foreground hover:bg-brand/90">Exit poll</Button>
-              <Button size="lg" variant="outline" asChild><Link href="/elections/assembly/results">View election results →</Link></Button>
+              <Button size="lg" variant="outline" asChild><Link href="/elections/assembly/counting">Start counting →</Link></Button>
             </>
           : <>{animating && <SpeedControl speed={speed} onChange={setSpeed} />}<Button disabled={animating || done} onClick={castVotes}>{animating ? "Polling…" : "Start voting"}</Button></>}
       />
@@ -171,7 +171,7 @@ export default function AssemblyVotingPage() {
           <UpdatesFeed items={updates} />
         </div>
       </div>
-      {finished && <Notice tone="info">Voting is complete. All {total} constituencies have voted. Open the exit poll to see the projected seats, or go straight to the results.</Notice>}
+      {finished && <Notice tone="info">Voting is complete. All {total} constituencies have voted. Open the exit poll to see the projected seats, or start counting.</Notice>}
       <p className="text-xs text-muted-foreground">Voting data is saved locally for this game. <Link href="/elections/assembly/campaign" className="underline underline-offset-4">Campaign report</Link></p>
     </main>
   );
