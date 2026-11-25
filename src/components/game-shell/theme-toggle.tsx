@@ -32,7 +32,6 @@ export function ThemeToggle() {
       size="sm"
       onClick={toggle}
       aria-label={dark ? "Switch to light mode" : "Switch to dark mode"}
-      className="border-white/30 bg-transparent text-white hover:bg-white/10 hover:text-white"
     >
       {dark ? <Sun /> : <Moon />}
       {dark ? "Light mode" : "Dark mode"}

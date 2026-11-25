@@ -144,31 +144,31 @@ export default function PoliticalRelationshipsPage() {
   }, [parties, nationalData, scope, hasStateOverride]);
 
   return (
-    <main className="min-h-screen bg-slate-100 px-4 py-8 text-slate-900 dark:bg-slate-950 dark:text-white sm:px-8">
+    <main className="min-h-screen px-4 py-8 text-foreground sm:px-8">
       <div className="mx-auto max-w-5xl space-y-6">
         <div>
-          <p className="text-sm font-semibold uppercase tracking-wider text-orange-500">Game Settings</p>
+          <p className="text-sm font-semibold uppercase tracking-wider text-brand">Game Settings</p>
           <h1 className="mt-2 text-3xl font-bold">Political Relationships</h1>
-          <p className="mt-2 text-sm text-slate-600 dark:text-slate-400">
+          <p className="mt-2 text-sm text-muted-foreground">
             Select one party to view and edit its relationship with every other party. The same relationship appears when you select the other party.
           </p>
         </div>
 
-        <section className="rounded-xl border border-slate-200 bg-white p-5 dark:border-slate-800 dark:bg-slate-900">
+        <section className="rounded-xl border border-border bg-card p-5">
           <div className="flex flex-wrap items-center justify-between gap-4">
             <div>
               <h2 className="font-semibold">Relationship scope</h2>
-              <p className="mt-1 text-sm text-slate-500">State-specific relationships can override national relationships.</p>
+              <p className="mt-1 text-sm text-muted-foreground">State-specific relationships can override national relationships.</p>
             </div>
             <div className="flex gap-2">
-              <button onClick={() => setScope("national")} className={`rounded-lg px-4 py-2 text-sm font-semibold ${scope === "national" ? "bg-orange-500 text-white" : "bg-slate-100 text-slate-700 dark:bg-slate-800 dark:text-slate-300"}`}>National</button>
-              <button onClick={() => setScope("state")} className={`rounded-lg px-4 py-2 text-sm font-semibold ${scope === "state" ? "bg-orange-500 text-white" : "bg-slate-100 text-slate-700 dark:bg-slate-800 dark:text-slate-300"}`}>State</button>
+              <button onClick={() => setScope("national")} className={`rounded-lg px-4 py-2 text-sm font-semibold ${scope === "national" ? "bg-brand/100 text-brand-foreground" : "bg-muted text-foreground/80"}`}>National</button>
+              <button onClick={() => setScope("state")} className={`rounded-lg px-4 py-2 text-sm font-semibold ${scope === "state" ? "bg-brand/100 text-brand-foreground" : "bg-muted text-foreground/80"}`}>State</button>
             </div>
           </div>
           {scope === "state" && (
             <div className="mt-5 max-w-sm">
               <label className="mb-2 block text-sm font-medium">Select state / UT</label>
-              <select value={selectedState} onChange={(e) => setSelectedState(e.target.value)} className="w-full rounded-lg border border-slate-300 bg-white px-3 py-2.5 dark:border-slate-700 dark:bg-slate-800" style={{ colorScheme: "light dark" }}>
+              <select value={selectedState} onChange={(e) => setSelectedState(e.target.value)} className="w-full rounded-lg border border-border bg-card px-3 py-2.5" style={{ colorScheme: "light dark" }}>
                 {states.map((state) => <option key={state} value={state}>{state}</option>)}
               </select>
             </div>
@@ -176,58 +176,58 @@ export default function PoliticalRelationshipsPage() {
         </section>
 
         <section className="grid grid-cols-1 gap-4 sm:grid-cols-3">
-          <div className="rounded-xl border border-slate-200 bg-white p-5 dark:border-slate-800 dark:bg-slate-900">
-            <p className="text-sm text-slate-500">Total unique party pairs</p>
+          <div className="rounded-xl border border-border bg-card p-5">
+            <p className="text-sm text-muted-foreground">Total unique party pairs</p>
             <p className="mt-2 text-3xl font-bold">{totalPairs}</p>
           </div>
-          <div className="rounded-xl border border-slate-200 bg-white p-5 dark:border-slate-800 dark:bg-slate-900">
-            <p className="text-sm text-slate-500">{scope === "national" ? "Configured nationally" : "State overrides"}</p>
-            <p className="mt-2 text-3xl font-bold text-orange-500">{configuredCount}</p>
+          <div className="rounded-xl border border-border bg-card p-5">
+            <p className="text-sm text-muted-foreground">{scope === "national" ? "Configured nationally" : "State overrides"}</p>
+            <p className="mt-2 text-3xl font-bold text-brand">{configuredCount}</p>
           </div>
-          <div className="rounded-xl border border-slate-200 bg-white p-5 dark:border-slate-800 dark:bg-slate-900">
-            <p className="text-sm text-slate-500">Parties in master list</p>
+          <div className="rounded-xl border border-border bg-card p-5">
+            <p className="text-sm text-muted-foreground">Parties in master list</p>
             <p className="mt-2 text-3xl font-bold">{parties.length}</p>
           </div>
         </section>
 
-        <section className="rounded-xl border border-slate-200 bg-white p-5 dark:border-slate-800 dark:bg-slate-900">
+        <section className="rounded-xl border border-border bg-card p-5">
           <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
             <div>
               <label className="mb-2 block text-sm font-medium">Select party from index</label>
-              <select value={selectedParty} onChange={(e) => { setSelectedParty(e.target.value); setSearch(""); setFilter("ALL"); }} className="w-full rounded-lg border border-slate-300 bg-white px-3 py-2.5 dark:border-slate-700 dark:bg-slate-800" style={{ colorScheme: "light dark" }}>
+              <select value={selectedParty} onChange={(e) => { setSelectedParty(e.target.value); setSearch(""); setFilter("ALL"); }} className="w-full rounded-lg border border-border bg-card px-3 py-2.5" style={{ colorScheme: "light dark" }}>
                 {parties.map((party) => <option key={party.id} value={party.id}>{party.id}</option>)}
               </select>
             </div>
             <div>
               <label className="mb-2 block text-sm font-medium">Search other parties</label>
-              <input value={search} onChange={(e) => setSearch(e.target.value)} placeholder="Search by party ID..." className="w-full rounded-lg border border-slate-300 bg-white px-3 py-2.5 dark:border-slate-700 dark:bg-slate-800" />
+              <input value={search} onChange={(e) => setSearch(e.target.value)} placeholder="Search by party ID..." className="w-full rounded-lg border border-border bg-card px-3 py-2.5" />
             </div>
           </div>
           <div className="mt-4 flex flex-wrap items-end justify-between gap-3">
             <div className="w-full sm:w-64">
               <label className="mb-2 block text-sm font-medium">Filter by relationship</label>
-              <select value={filter} onChange={(e) => setFilter(e.target.value as "ALL" | Relationship)} className="w-full rounded-lg border border-slate-300 bg-white px-3 py-2.5 dark:border-slate-700 dark:bg-slate-800" style={{ colorScheme: "light dark" }}>
+              <select value={filter} onChange={(e) => setFilter(e.target.value as "ALL" | Relationship)} className="w-full rounded-lg border border-border bg-card px-3 py-2.5" style={{ colorScheme: "light dark" }}>
                 <option value="ALL">All relationships</option>
                 {relationships.map((item) => <option key={item.value} value={item.value}>{item.label}</option>)}
               </select>
             </div>
-            <button onClick={resetCurrentScope} className="rounded-lg border border-red-300 px-4 py-2.5 text-sm font-semibold text-red-600 hover:bg-red-50 dark:border-red-900 dark:hover:bg-red-950">
+            <button onClick={resetCurrentScope} className="rounded-lg border border-destructive/40 px-4 py-2.5 text-sm font-semibold text-destructive hover:bg-destructive/10">
               {scope === "national" ? "Reset national relationships" : `Reset ${selectedState} overrides`}
             </button>
           </div>
         </section>
 
-        <section className="overflow-hidden rounded-xl border border-slate-200 bg-white dark:border-slate-800 dark:bg-slate-900">
-          <div className="flex flex-wrap items-center justify-between gap-2 border-b border-slate-200 p-4 dark:border-slate-800">
+        <section className="overflow-hidden rounded-xl border border-border bg-card">
+          <div className="flex flex-wrap items-center justify-between gap-2 border-b border-border p-4">
             <div>
               <h2 className="font-semibold">Relationships of {selectedParty}</h2>
-              <p className="mt-1 text-sm text-slate-500">{filteredParties.length} of {otherParties.length} other parties</p>
+              <p className="mt-1 text-sm text-muted-foreground">{filteredParties.length} of {otherParties.length} other parties</p>
             </div>
-            <span className="rounded-full bg-orange-50 px-3 py-1 text-xs font-semibold text-orange-700 dark:bg-orange-950 dark:text-orange-300">{scope === "national" ? "National" : selectedState}</span>
+            <span className="rounded-full bg-brand/10 px-3 py-1 text-xs font-semibold text-brand dark:text-brand">{scope === "national" ? "National" : selectedState}</span>
           </div>
           <div className="overflow-x-auto">
             <table className="w-full min-w-[600px] text-left text-sm">
-              <thead className="bg-slate-100 text-slate-600 dark:bg-slate-800 dark:text-slate-300">
+              <thead className="bg-muted text-muted-foreground">
                 <tr>
                   <th className="px-4 py-3">#</th>
                   <th className="px-4 py-3">Selected party</th>
@@ -242,32 +242,32 @@ export default function PoliticalRelationshipsPage() {
                   const relationship = getEffectiveRelationship(pairId);
                   const overridden = scope === "state" && hasStateOverride(pairId);
                   return (
-                    <tr key={pairId} className="border-t border-slate-100 dark:border-slate-800">
-                      <td className="px-4 py-3 text-slate-500">{index + 1}</td>
+                    <tr key={pairId} className="border-t border-border">
+                      <td className="px-4 py-3 text-muted-foreground">{index + 1}</td>
                       <td className="px-4 py-3 font-semibold">{selectedParty}</td>
                       <td className="px-4 py-3 font-semibold">{party.id}</td>
                       <td className="px-4 py-3">
-                        <select value={relationship} onChange={(e) => updateRelationship(pairId, e.target.value as Relationship)} className="w-full max-w-xs rounded-lg border border-slate-300 bg-white px-3 py-2 dark:border-slate-700 dark:bg-slate-800" style={{ colorScheme: "light dark" }}>
+                        <select value={relationship} onChange={(e) => updateRelationship(pairId, e.target.value as Relationship)} className="w-full max-w-xs rounded-lg border border-border bg-card px-3 py-2" style={{ colorScheme: "light dark" }}>
                           {relationships.map((item) => <option key={item.value} value={item.value}>{item.label}</option>)}
                         </select>
                       </td>
                       {scope === "state" && (
                         <td className="px-4 py-3">
-                          {overridden ? <span className="text-xs font-medium text-orange-600 dark:text-orange-400">State override</span> : <span className="text-xs text-slate-500">National default</span>}
+                          {overridden ? <span className="text-xs font-medium text-brand dark:text-brand">State override</span> : <span className="text-xs text-muted-foreground">National default</span>}
                         </td>
                       )}
                     </tr>
                   );
                 })}
                 {filteredParties.length === 0 && (
-                  <tr><td colSpan={scope === "state" ? 5 : 4} className="px-4 py-10 text-center text-slate-500">No matching parties found.</td></tr>
+                  <tr><td colSpan={scope === "state" ? 5 : 4} className="px-4 py-10 text-center text-muted-foreground">No matching parties found.</td></tr>
                 )}
               </tbody>
             </table>
           </div>
         </section>
 
-        <p className="text-sm text-slate-500">
+        <p className="text-sm text-muted-foreground">
           Changes are automatically saved in this browser. Each party pair is stored only once, so the relationship appears identically whichever party you select. State-specific values override national values; otherwise, the national relationship is inherited.
         </p>
       </div>

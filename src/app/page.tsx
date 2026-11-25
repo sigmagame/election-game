@@ -1,6 +1,6 @@
 "use client";
 
-import { ArrowRight, Flag, Landmark, Users, Handshake } from "lucide-react";
+import { ArrowRight, Flag, Users, Handshake } from "lucide-react";
 import Link from "next/link";
 import { ThemeToggle } from "@/components/game-shell/theme-toggle";
 import { Button } from "@/components/ui/button";
@@ -26,33 +26,38 @@ const FEATURES = [
 
 export default function HomePage() {
   return (
-    <main className="min-h-screen bg-background text-foreground">
-      <header className="bg-[#1b2a6b] text-white">
-        <div className="mx-auto flex max-w-[1200px] flex-wrap items-center justify-between gap-4 px-6 py-3.5">
-          <Link href="/" className="flex items-center gap-3">
-            <Landmark className="size-8 text-brand" aria-hidden />
-            <span className="leading-tight">
-              <span className="block font-heading text-lg font-semibold">Indian Election</span>
-              <span className="block text-xs text-white/70">Simulator</span>
-            </span>
-          </Link>
-          <nav className="flex flex-wrap gap-7 text-sm font-medium text-white/75" aria-label="Page sections">
-            <Link href="/" className="text-brand">Home</Link>
-            <a href="#how" className="hover:text-white">How to play</a>
-            <a href="#features" className="hover:text-white">Features</a>
-            <a href="#announce" className="hover:text-white">About</a>
-          </nav>
-          <div className="flex items-center gap-3">
-            <ThemeToggle />
-            <Button asChild className="bg-brand text-brand-foreground hover:bg-brand/90">
-              <Link href="/elections/setup">Start new game</Link>
-            </Button>
+    <main className="min-h-screen text-foreground">
+      <header className="sticky top-0 z-40 pt-3">
+        <div className="mx-auto max-w-[1200px] px-6">
+        <div className="glass-nav-clear overflow-hidden rounded-2xl">
+          <div className="flex flex-wrap items-center justify-between gap-4 px-4 py-3 sm:px-5">
+            <Link href="/" className="flex items-center gap-3">
+              {/* eslint-disable-next-line @next/next/no-img-element -- small static brand icon */}
+              <img src="/brand-icon.svg" alt="" width={36} height={36} className="size-9 rounded-[10px]" />
+              <span className="leading-tight">
+                <span className="block font-heading text-lg font-semibold">Indian Election</span>
+                <span className="block text-xs text-muted-foreground">Simulator</span>
+              </span>
+            </Link>
+            <nav className="flex flex-wrap gap-1 text-sm font-medium" aria-label="Page sections">
+              <Link href="/" className="rounded-full bg-primary px-4 py-2 text-primary-foreground">Home</Link>
+              <a href="#how" className="rounded-full px-4 py-2 text-muted-foreground hover:bg-muted hover:text-foreground">How to play</a>
+              <a href="#features" className="rounded-full px-4 py-2 text-muted-foreground hover:bg-muted hover:text-foreground">Features</a>
+              <a href="#announce" className="rounded-full px-4 py-2 text-muted-foreground hover:bg-muted hover:text-foreground">About</a>
+            </nav>
+            <div className="flex items-center gap-3">
+              <ThemeToggle />
+              <Button asChild className="bg-brand text-brand-foreground hover:bg-brand/90">
+                <Link href="/elections/setup">Start new game</Link>
+              </Button>
+            </div>
+          </div>
+          <div className="flex h-1" aria-hidden>
+            <div className="flex-1 bg-[#ff9933]" />
+            <div className="flex-1 bg-white" />
+            <div className="flex-1 bg-[#138808]" />
           </div>
         </div>
-        <div className="flex h-1" aria-hidden>
-          <div className="flex-1 bg-[#ff9933]" />
-          <div className="flex-1 bg-white" />
-          <div className="flex-1 bg-[#138808]" />
         </div>
       </header>
 
