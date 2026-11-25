@@ -73,7 +73,9 @@ export function CountingBoard(props: CountingBoardProps) {
     }
   });
   const [speed, setSpeed] = useState<Speed>("normal");
-  const [paused, setPaused] = useState(false);
+  // Counting waits for the player to press Start. Coming back to a count already under way shows it paused.
+  const [started, setStarted] = useState(clock >= 1);
+  const [paused, setPaused] = useState(clock >= 1 && clock < last);
   const [tallyBy, setTallyBy] = useState<"alliance" | "party">("alliance");
   const [groupName, setGroupName] = useState<string | null>(null);
   const [seatId, setSeatId] = useState<string | null>(null);
@@ -98,10 +100,10 @@ export function CountingBoard(props: CountingBoardProps) {
 
   // Counting runs on its own: one round per tick, every seat in the election at once.
   useEffect(() => {
-    if (paused || finished) return;
+    if (!started || paused || finished) return;
     const timer = window.setTimeout(() => setClock((c) => Math.min(last, c + 1)), TICK_MS[speed]);
     return () => window.clearTimeout(timer);
-  }, [clock, paused, finished, speed, last]);
+  }, [clock, started, paused, finished, speed, last]);
 
   const unitCache = useMemo(() => new Map<string, CountUnit>(), [ctx]);
   const unitFor = (state: string, party: string) => {
@@ -217,19 +219,25 @@ export function CountingBoard(props: CountingBoardProps) {
           <p className="mt-1 max-w-3xl text-sm text-muted-foreground">{props.intro}</p>
         </div>
         <div className="flex flex-wrap items-center gap-2">
-          <div role="group" aria-label="Counting speed" className="inline-flex overflow-hidden rounded-lg border border-border text-sm">
-            {SPEEDS.map(([id, label]) => (
-              <button key={id} type="button" aria-pressed={speed === id} onClick={() => setSpeed(id)} className={`px-3 py-1.5 font-medium transition ${speed === id ? "bg-brand text-brand-foreground" : "bg-card text-muted-foreground hover:bg-muted"}`}>
-                {label}
-              </button>
-            ))}
-          </div>
-          {resultsShown ? (
-            <Button asChild className="animate-in fade-in bg-brand text-brand-foreground duration-500 hover:bg-brand/90"><Link href={resultsHref}>View election results →</Link></Button>
+          {!started ? (
+            <Button size="lg" className="bg-brand text-brand-foreground hover:bg-brand/90" onClick={() => setStarted(true)}>Start counting</Button>
           ) : (
             <>
-              <Button variant="outline" disabled={finished} onClick={() => setPaused((p) => !p)} className="transition-opacity duration-700 disabled:opacity-0">{paused ? "Resume" : "Pause"}</Button>
-              <Button variant="outline" disabled={finished} onClick={() => setClock(last)} className="transition-opacity duration-700 disabled:opacity-0">Skip to end</Button>
+              <div role="group" aria-label="Counting speed" className="inline-flex animate-in fade-in overflow-hidden rounded-lg border border-border text-sm duration-500">
+                {SPEEDS.map(([id, label]) => (
+                  <button key={id} type="button" aria-pressed={speed === id} onClick={() => setSpeed(id)} className={`px-3 py-1.5 font-medium transition ${speed === id ? "bg-brand text-brand-foreground" : "bg-card text-muted-foreground hover:bg-muted"}`}>
+                    {label}
+                  </button>
+                ))}
+              </div>
+              {resultsShown ? (
+                <Button asChild className="animate-in fade-in bg-brand text-brand-foreground duration-500 hover:bg-brand/90"><Link href={resultsHref}>View election results →</Link></Button>
+              ) : (
+                <>
+                  <Button variant="outline" disabled={finished} onClick={() => setPaused((p) => !p)} className="transition-opacity duration-700 disabled:opacity-0">{paused ? "Resume" : "Pause"}</Button>
+                  <Button variant="outline" disabled={finished} onClick={() => setClock(last)} className="transition-opacity duration-700 disabled:opacity-0">Skip to end</Button>
+                </>
+              )}
             </>
           )}
         </div>
@@ -238,7 +246,7 @@ export function CountingBoard(props: CountingBoardProps) {
       <section className="rounded-xl border border-border bg-card p-4">
         <div className="flex flex-wrap items-baseline justify-between gap-2">
           <h2 className="text-sm font-semibold">
-            {clock < 1 ? "Counting is about to begin" : `Round ${clock} of ${last}`} · all {counts.length} constituencies counting
+            {clock < 1 ? "Counting has not begun" : `Round ${clock} of ${last}`} · all {counts.length} constituencies counting
           </h2>
           <span className="text-sm text-muted-foreground">{won} won · {counts.length - won} still leading · about {Math.round(counted * 100)}% of votes counted</span>
         </div>

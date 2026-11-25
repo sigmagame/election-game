@@ -147,7 +147,7 @@ export default function AssemblyVotingPage() {
         action={finished
           ? <>
               <Button size="lg" onClick={() => setExitOpen(true)} className="bg-brand text-brand-foreground hover:bg-brand/90">Exit poll</Button>
-              <Button size="lg" variant="outline" asChild><Link href="/elections/assembly/counting">Start counting →</Link></Button>
+              <Button size="lg" variant="outline" asChild><Link href="/elections/assembly/counting">Proceed to counting →</Link></Button>
             </>
           : <>{animating && <SpeedControl speed={speed} onChange={setSpeed} />}<Button disabled={animating || done} onClick={castVotes}>{animating ? "Polling…" : "Start voting"}</Button></>}
       />
@@ -171,7 +171,7 @@ export default function AssemblyVotingPage() {
           <UpdatesFeed items={updates} />
         </div>
       </div>
-      {finished && <Notice tone="info">Voting is complete. All {total} constituencies have voted. Open the exit poll to see the projected seats, or start counting.</Notice>}
+      {finished && <Notice tone="info">Voting is complete. All {total} constituencies have voted. Open the exit poll to see the projected seats, or proceed to counting.</Notice>}
       <p className="text-xs text-muted-foreground">Voting data is saved locally for this game. <Link href="/elections/assembly/campaign" className="underline underline-offset-4">Campaign report</Link></p>
     </main>
   );
