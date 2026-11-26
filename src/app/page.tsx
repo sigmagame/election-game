@@ -2,8 +2,10 @@
 
 import { ArrowRight, Flag, Users, Handshake } from "lucide-react";
 import Link from "next/link";
+import { useEffect, useState } from "react";
 import { ThemeToggle } from "@/components/game-shell/theme-toggle";
 import { Button } from "@/components/ui/button";
+import { findSavedGame, type SavedGame } from "@/lib/saved-game";
 
 /** Seats of the parliament arc: [x, y, colour]. Purely decorative. */
 const SEATS: Array<[number, number, string]> = [[150,300,"#6f7cf0"],[172,300,"#6f7cf0"],[194,300,"#6f7cf0"],[216,300,"#6f7cf0"],[238,300,"#6f7cf0"],[152,278,"#6f7cf0"],[174,278,"#6f7cf0"],[196,278,"#6f7cf0"],[219,276,"#6f7cf0"],[157,256,"#6f7cf0"],[180,256,"#6f7cf0"],[243,276,"#6f7cf0"],[203,257,"#6f7cf0"],[165,235,"#6f7cf0"],[189,236,"#6f7cf0"],[229,255,"#6f7cf0"],[176,216,"#6f7cf0"],[214,238,"#6f7cf0"],[202,218,"#6f7cf0"],[190,198,"#6f7cf0"],[256,256,"#6f7cf0"],[229,221,"#6f7cf0"],[245,237,"#6f7cf0"],[218,202,"#6f7cf0"],[206,183,"#6f7cf0"],[225,170,"#6f7cf0"],[236,189,"#6f7cf0"],[247,208,"#6f7cf0"],[265,224,"#6f7cf0"],[276,243,"#6f7cf0"],[245,160,"#6f7cf0"],[256,180,"#6f7cf0"],[267,199,"#ff8a3d"],[267,154,"#ff8a3d"],[278,174,"#ff8a3d"],[288,217,"#ff8a3d"],[289,195,"#ff8a3d"],[289,150,"#ff8a3d"],[300,172,"#ff8a3d"],[300,238,"#ff8a3d"],[311,150,"#ff8a3d"],[311,195,"#ff8a3d"],[312,217,"#ff8a3d"],[322,174,"#ff8a3d"],[333,154,"#ff8a3d"],[333,199,"#ff8a3d"],[344,180,"#ff8a3d"],[355,160,"#ff8a3d"],[324,243,"#ff8a3d"],[335,224,"#ff8a3d"],[375,170,"#ff8a3d"],[364,189,"#ff8a3d"],[353,208,"#ff8a3d"],[394,183,"#ff8a3d"],[382,202,"#ff8a3d"],[355,237,"#ff8a3d"],[371,221,"#ff8a3d"],[344,256,"#ff8a3d"],[410,198,"#ff8a3d"],[398,218,"#ff8a3d"],[386,238,"#ff8a3d"],[424,216,"#ff8a3d"],[371,255,"#ff8a3d"],[411,236,"#2fa84f"],[435,235,"#2fa84f"],[397,257,"#2fa84f"],[357,276,"#2fa84f"],[420,256,"#2fa84f"],[443,256,"#2fa84f"],[381,276,"#2fa84f"],[404,278,"#2fa84f"],[426,278,"#2fa84f"],[448,278,"#8b93a8"],[450,300,"#8b93a8"],[428,300,"#8b93a8"],[406,300,"#8b93a8"],[384,300,"#8b93a8"],[362,300,"#8b93a8"]];
@@ -25,6 +27,13 @@ const FEATURES = [
 ];
 
 export default function HomePage() {
+  // undefined = still checking this browser's saves, null = no saved game
+  const [saved, setSaved] = useState<SavedGame | null | undefined>(undefined);
+  useEffect(() => {
+    // eslint-disable-next-line react-hooks/set-state-in-effect -- saves live in localStorage, which only exists after mount
+    setSaved(findSavedGame());
+  }, []);
+
   return (
     <main className="min-h-screen text-foreground">
       <header className="sticky top-0 z-40 pt-3">
@@ -79,11 +88,23 @@ export default function HomePage() {
                   Start new game <ArrowRight />
                 </Link>
               </Button>
-              <Button asChild size="lg" variant="outline" className="h-12 px-6 text-base">
-                <Link href="/elections/setup">Continue saved game</Link>
-              </Button>
+              {saved ? (
+                <Button asChild size="lg" variant="outline" className="h-12 px-6 text-base">
+                  <Link href={saved.href}>Continue saved game</Link>
+                </Button>
+              ) : (
+                <Button size="lg" variant="outline" className="h-12 px-6 text-base" disabled>
+                  Continue saved game
+                </Button>
+              )}
             </div>
-            <p className="text-sm text-muted-foreground">Both buttons open the Setup page. Your game saves automatically in this browser.</p>
+            <p className="text-sm text-muted-foreground">
+              {saved
+                ? `Saved game found: ${saved.label}. Continue takes you back to where you left off.`
+                : saved === null
+                  ? "No saved game yet. Start a new game and it saves automatically in this browser."
+                  : "Checking for a saved game…"}
+            </p>
           </div>
           <div className="flex min-w-0 flex-[1_1_420px] justify-center">
             <div className="w-full max-w-[520px] rounded-2xl border border-border bg-card p-6">
@@ -107,7 +128,7 @@ export default function HomePage() {
         <video
           suppressHydrationWarning
           className="mt-8 aspect-video max-h-[560px] w-full rounded-2xl border border-border bg-black object-cover"
-          src="/videos/election-notification.mp4"
+          src="/Videos/election-notification.mp4"
           controls
           playsInline
           preload="metadata"

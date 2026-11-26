@@ -66,3 +66,20 @@ export function deleteGameData(kind: GameKind) {
   }
   clearGameComplete(kind);
 }
+
+/** Election types that have a game under way (started and not yet finished). Browser only. */
+export function runningGames(): GameKind[] {
+  try {
+    return (Object.keys(GAME_KEYS) as GameKind[]).filter((k) => {
+      const raw = localStorage.getItem(GAME_KEYS[k].started);
+      if (raw === null) return false;
+      try {
+        return !isGameComplete(k, (JSON.parse(raw) as { gameId?: string }).gameId);
+      } catch {
+        return true;
+      }
+    });
+  } catch {
+    return [];
+  }
+}

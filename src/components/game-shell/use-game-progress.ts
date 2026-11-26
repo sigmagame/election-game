@@ -45,45 +45,49 @@ export interface GameProgress {
   hung: boolean;
 }
 
-/** Works out how far the saved game has got, from the saves the game already writes. */
+/** Works out how far the saved game has got, from the saves the game already writes. Browser only. */
+export function readGameProgress(kind: ElectionKind): GameProgress {
+  const keys = KEYS[kind];
+  const game = read(keys.game);
+  const campaign = read(keys.campaign);
+  const voting = read(keys.voting);
+  const negotiation = read(keys.negotiation);
+  const cabinet = read(keys.cabinet);
+
+  let hung = false;
+  if (kind === "assembly") {
+    try {
+      const assembly = loadAssemblyGame();
+      const counted = assembly ? loadAssemblyVoting(assembly.gameId) : null;
+      hung =
+        Boolean(assembly && counted && counted.results.length === assembly.totalConstituencies) &&
+        getAssemblyGovernmentOutcome(assembly!, counted!).status === "HUNG";
+    } catch {
+      hung = false;
+    }
+  }
+
+  let reachedId = "setup";
+  if (campaign) reachedId = "campaign";
+  if (campaign?.status === "LOCKED") reachedId = "voting";
+  const votingDone =
+    voting?.status === "COMPLETED" ||
+    (Array.isArray(voting?.completedPhases) && (voting?.completedPhases as unknown[]).length >= 7);
+  if (votingDone) reachedId = "results";
+  if (votingDone && (negotiation || hung)) reachedId = "negotiation";
+  if (votingDone && cabinet) reachedId = "government";
+  if (votingDone && kind === "assembly" && !hung) reachedId = "government";
+
+  const partyId = typeof game?.playerPartyId === "string" ? game.playerPartyId : null;
+  return { reachedId, partyName: partyId ? (partyNames[partyId] ?? partyId) : null, hung };
+}
+
 export function useGameProgress(kind: ElectionKind, path: string): GameProgress {
   const [progress, setProgress] = useState<GameProgress>({ reachedId: "setup", partyName: null, hung: false });
 
   useEffect(() => {
-    const keys = KEYS[kind];
-    const game = read(keys.game);
-    const campaign = read(keys.campaign);
-    const voting = read(keys.voting);
-    const negotiation = read(keys.negotiation);
-    const cabinet = read(keys.cabinet);
-
-    let hung = false;
-    if (kind === "assembly") {
-      try {
-        const assembly = loadAssemblyGame();
-        const counted = assembly ? loadAssemblyVoting(assembly.gameId) : null;
-        hung =
-          Boolean(assembly && counted && counted.results.length === assembly.totalConstituencies) &&
-          getAssemblyGovernmentOutcome(assembly!, counted!).status === "HUNG";
-      } catch {
-        hung = false;
-      }
-    }
-
-    let reachedId = "setup";
-    if (campaign) reachedId = "campaign";
-    if (campaign?.status === "LOCKED") reachedId = "voting";
-    const votingDone =
-      voting?.status === "COMPLETED" ||
-      (Array.isArray(voting?.completedPhases) && (voting?.completedPhases as unknown[]).length >= 7);
-    if (votingDone) reachedId = "results";
-    if (votingDone && (negotiation || hung)) reachedId = "negotiation";
-    if (votingDone && cabinet) reachedId = "government";
-    if (votingDone && kind === "assembly" && !hung) reachedId = "government";
-
-    const partyId = typeof game?.playerPartyId === "string" ? game.playerPartyId : null;
     // eslint-disable-next-line react-hooks/set-state-in-effect -- saves live in localStorage, which only exists after mount
-    setProgress({ reachedId, partyName: partyId ? (partyNames[partyId] ?? partyId) : null, hung });
+    setProgress(readGameProgress(kind));
   }, [kind, path]);
 
   return progress;
