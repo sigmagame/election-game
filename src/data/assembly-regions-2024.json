@@ -434,7 +434,7 @@
             "ac-assam-dhemaji-lakhimpur",
             "ac-assam-sissiborgaon-lakhimpur",
             "ac-assam-jonai-lakhimpur",
-            "ac-assam-bihpuria-sonitpur",
+            "ac-assam-bihpuria-lakhimpur",
             "ac-assam-rongonadi-lakhimpur",
             "ac-assam-nowboicha-lakhimpur",
             "ac-assam-lakhimpur-lakhimpur",
@@ -901,7 +901,7 @@
       ]
     },
     {
-      "state": "NCT OF Delhi",
+      "state": "Delhi",
       "stateId": "nct-of-delhi",
       "regions": [
         {

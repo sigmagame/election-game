@@ -5816,8 +5816,8 @@
       "notes": null
     },
     {
-      "id": "pc-nct-of-delhi-chandni-chowk",
-      "state": "NCT OF Delhi",
+      "id": "pc-delhi-chandni-chowk",
+      "state": "Delhi",
       "name": "Chandni Chowk",
       "totalVoters": 1646467,
       "registeredElectors": 1646467,
@@ -5827,8 +5827,8 @@
       "notes": null
     },
     {
-      "id": "pc-nct-of-delhi-north-east-delhi",
-      "state": "NCT OF Delhi",
+      "id": "pc-delhi-north-east-delhi",
+      "state": "Delhi",
       "name": "North-East Delhi",
       "totalVoters": 2464397,
       "registeredElectors": 2464397,
@@ -5838,8 +5838,8 @@
       "notes": null
     },
     {
-      "id": "pc-nct-of-delhi-east-delhi",
-      "state": "NCT OF Delhi",
+      "id": "pc-delhi-east-delhi",
+      "state": "Delhi",
       "name": "East Delhi",
       "totalVoters": 2121610,
       "registeredElectors": 2121610,
@@ -5849,8 +5849,8 @@
       "notes": null
     },
     {
-      "id": "pc-nct-of-delhi-new-delhi",
-      "state": "NCT OF Delhi",
+      "id": "pc-delhi-new-delhi",
+      "state": "Delhi",
       "name": "New Delhi",
       "totalVoters": 1526694,
       "registeredElectors": 1526694,
@@ -5860,8 +5860,8 @@
       "notes": null
     },
     {
-      "id": "pc-nct-of-delhi-north-west-delhi",
-      "state": "NCT OF Delhi",
+      "id": "pc-delhi-north-west-delhi",
+      "state": "Delhi",
       "name": "North-West Delhi",
       "totalVoters": 2569274,
       "registeredElectors": 2569274,
@@ -5871,8 +5871,8 @@
       "notes": null
     },
     {
-      "id": "pc-nct-of-delhi-west-delhi",
-      "state": "NCT OF Delhi",
+      "id": "pc-delhi-west-delhi",
+      "state": "Delhi",
       "name": "West Delhi",
       "totalVoters": 2592498,
       "registeredElectors": 2592498,
@@ -5882,8 +5882,8 @@
       "notes": null
     },
     {
-      "id": "pc-nct-of-delhi-south-delhi",
-      "state": "NCT OF Delhi",
+      "id": "pc-delhi-south-delhi",
+      "state": "Delhi",
       "name": "South Delhi",
       "totalVoters": 2293698,
       "registeredElectors": 2293698,
