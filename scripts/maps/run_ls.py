@@ -5,7 +5,7 @@ D = '/mnt/user-data/attachments/d6785510-f880-53fa-a4cd-dc7679bc8c45/'
 P = '/tmp/claude-0/-home-claude/d6785510-f880-53fa-a4cd-dc7679bc8c45/scratchpad/proj/election-game/'
 EPS = float(sys.argv[1]) if len(sys.argv) > 1 else 0.012
 rows = next(v for v in json.load(open(P + 'src/data/lok-sabha-constituencies-2024.json')).values() if isinstance(v, list))
-SA = {'orissa': 'Odisha', 'delhi': 'NCT OF Delhi', 'jammu & kashmir': 'Jammu and Kashmir', 'andaman & nicobar': 'Andaman & Nicobar Islands',
+SA = {'orissa': 'Odisha', 'delhi': 'Delhi', 'jammu & kashmir': 'Jammu and Kashmir', 'andaman & nicobar': 'Andaman & Nicobar Islands',
       'dadra & nagar haveli': 'Dadra & Nagar Haveli and Daman & Diu', 'daman & diu': 'Dadra & Nagar Haveli and Daman & Diu'}
 ALIAS = {  # geojson PC name (normalised) -> game name (normalised); Assam shapes are the pre-2023 boundaries
  'tirupati': 'thirupathi', 'pondicherry': 'puducherry', 'kurnool': 'kurnoolu', 'anantapur': 'ananthapur', 'narasaraopet': 'narsaraopet',

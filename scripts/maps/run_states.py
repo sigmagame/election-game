@@ -3,11 +3,11 @@ sys.path.insert(0, '.')
 from build_maps import *
 P = '/tmp/claude-0/-home-claude/d6785510-f880-53fa-a4cd-dc7679bc8c45/scratchpad/proj/election-game/'
 Z = '/tmp/claude-0/-home-claude/d6785510-f880-53fa-a4cd-dc7679bc8c45/scratchpad/vs_zip/'
-M = {'01':'Jammu and Kashmir','02':'Himachal Pradesh','03':'Punjab','05':'Uttarakhand','06':'Haryana','07':'NCT OF Delhi','08':'Rajasthan','09':'Uttar Pradesh','10':'Bihar','11':'Sikkim','12':'Arunachal Pradesh','13':'Nagaland','14':'Manipur','15':'Mizoram','16':'Tripura','17':'Meghalaya','18':'Assam','19':'West Bengal','20':'Jharkhand','21':'Odisha','22':'Chhattisgarh','23':'Madhya Pradesh','24':'Gujarat','27':'Maharashtra','29':'Karnataka','30':'Goa','32':'Kerala','33':'Tamil Nadu','34':'Puducherry','37':'Andhra Pradesh'}
+M = {'01':'Jammu and Kashmir','02':'Himachal Pradesh','03':'Punjab','05':'Uttarakhand','06':'Haryana','07':'Delhi','08':'Rajasthan','09':'Uttar Pradesh','10':'Bihar','11':'Sikkim','12':'Arunachal Pradesh','13':'Nagaland','14':'Manipur','15':'Mizoram','16':'Tripura','17':'Meghalaya','18':'Assam','19':'West Bengal','20':'Jharkhand','21':'Odisha','22':'Chhattisgarh','23':'Madhya Pradesh','24':'Gujarat','27':'Maharashtra','29':'Karnataka','30':'Goa','32':'Kerala','33':'Tamil Nadu','34':'Puducherry','37':'Andhra Pradesh'}
 ALL = next(v for v in json.load(open(P + 'src/data/assembly-constituencies-2024.json')).values() if isinstance(v, list))
 def clean(n): return re.sub(r'\s+', ' ', re.sub(r'\(\s*(SC|ST)?\s*\)?', '', n)).strip()
 def slugify(s): return re.sub(r'[^a-z0-9]+', '-', s.lower().replace('&', 'and')).strip('-')
-SLUG = {'NCT OF Delhi': 'delhi'}
+SLUG = {'Delhi': 'delhi'}
 STRICT = {'Jammu and Kashmir': 0.8, 'Assam': 0.8}
 ALIAS = {'Osmanabad': 'Dharashiv', 'Hoshangabad': 'Narmadapuram'}
 def build(code, state):

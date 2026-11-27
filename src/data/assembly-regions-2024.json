@@ -902,30 +902,30 @@
     },
     {
       "state": "Delhi",
-      "stateId": "nct-of-delhi",
+      "stateId": "delhi",
       "regions": [
         {
           "id": "north-and-north-west-delhi",
           "name": "North and North-West Delhi",
           "constituencyCount": 17,
           "constituencyIds": [
-            "ac-nct-of-delhi-nerela-north-west-delhi",
-            "ac-nct-of-delhi-burari-north-east-delhi",
-            "ac-nct-of-delhi-timarpur-north-east-delhi",
-            "ac-nct-of-delhi-adarsh-nagar-chandni-chowk",
-            "ac-nct-of-delhi-badli-north-west-delhi",
-            "ac-nct-of-delhi-rithala-north-west-delhi",
-            "ac-nct-of-delhi-bawana-north-west-delhi",
-            "ac-nct-of-delhi-mundka-north-west-delhi",
-            "ac-nct-of-delhi-kirari-north-west-delhi",
-            "ac-nct-of-delhi-sultanpur-majra-north-west-delhi",
-            "ac-nct-of-delhi-mangol-puri-north-west-delhi",
-            "ac-nct-of-delhi-rohini-north-west-delhi",
-            "ac-nct-of-delhi-shalimar-bagh-chandni-chowk",
-            "ac-nct-of-delhi-shakur-basti-chandni-chowk",
-            "ac-nct-of-delhi-tri-nagar-chandni-chowk",
-            "ac-nct-of-delhi-wazirpur-chandni-chowk",
-            "ac-nct-of-delhi-model-town-chandni-chowk"
+            "ac-delhi-nerela-north-west-delhi",
+            "ac-delhi-burari-north-east-delhi",
+            "ac-delhi-timarpur-north-east-delhi",
+            "ac-delhi-adarsh-nagar-chandni-chowk",
+            "ac-delhi-badli-north-west-delhi",
+            "ac-delhi-rithala-north-west-delhi",
+            "ac-delhi-bawana-north-west-delhi",
+            "ac-delhi-mundka-north-west-delhi",
+            "ac-delhi-kirari-north-west-delhi",
+            "ac-delhi-sultanpur-majra-north-west-delhi",
+            "ac-delhi-mangol-puri-north-west-delhi",
+            "ac-delhi-rohini-north-west-delhi",
+            "ac-delhi-shalimar-bagh-chandni-chowk",
+            "ac-delhi-shakur-basti-chandni-chowk",
+            "ac-delhi-tri-nagar-chandni-chowk",
+            "ac-delhi-wazirpur-chandni-chowk",
+            "ac-delhi-model-town-chandni-chowk"
           ]
         },
         {
@@ -933,15 +933,15 @@
           "name": "Central and New Delhi",
           "constituencyCount": 9,
           "constituencyIds": [
-            "ac-nct-of-delhi-sadar-bazar-chandni-chowk",
-            "ac-nct-of-delhi-chandni-chowk-chandni-chowk",
-            "ac-nct-of-delhi-matia-mahal-chandni-chowk",
-            "ac-nct-of-delhi-ballimaran-chandni-chowk",
-            "ac-nct-of-delhi-karol-bagh-new-delhi",
-            "ac-nct-of-delhi-patel-nagar-new-delhi",
-            "ac-nct-of-delhi-delhi-cantt-new-delhi",
-            "ac-nct-of-delhi-rajinder-nagar-new-delhi",
-            "ac-nct-of-delhi-new-delhi-new-delhi"
+            "ac-delhi-sadar-bazar-chandni-chowk",
+            "ac-delhi-chandni-chowk-chandni-chowk",
+            "ac-delhi-matia-mahal-chandni-chowk",
+            "ac-delhi-ballimaran-chandni-chowk",
+            "ac-delhi-karol-bagh-new-delhi",
+            "ac-delhi-patel-nagar-new-delhi",
+            "ac-delhi-delhi-cantt-new-delhi",
+            "ac-delhi-rajinder-nagar-new-delhi",
+            "ac-delhi-new-delhi-new-delhi"
           ]
         },
         {
@@ -949,20 +949,20 @@
           "name": "West Delhi",
           "constituencyCount": 14,
           "constituencyIds": [
-            "ac-nct-of-delhi-nangloi-jat-north-west-delhi",
-            "ac-nct-of-delhi-moti-nagar-new-delhi",
-            "ac-nct-of-delhi-madipur-west-delhi",
-            "ac-nct-of-delhi-rajouri-garden-west-delhi",
-            "ac-nct-of-delhi-hari-nagar-west-delhi",
-            "ac-nct-of-delhi-tilak-nagar-west-delhi",
-            "ac-nct-of-delhi-janakpuri-west-delhi",
-            "ac-nct-of-delhi-vikaspuri-west-delhi",
-            "ac-nct-of-delhi-uttam-nagar-west-delhi",
-            "ac-nct-of-delhi-dwarka-west-delhi",
-            "ac-nct-of-delhi-matiala-west-delhi",
-            "ac-nct-of-delhi-najafgarh-west-delhi",
-            "ac-nct-of-delhi-bijwasan-south-delhi",
-            "ac-nct-of-delhi-palam-south-delhi"
+            "ac-delhi-nangloi-jat-north-west-delhi",
+            "ac-delhi-moti-nagar-new-delhi",
+            "ac-delhi-madipur-west-delhi",
+            "ac-delhi-rajouri-garden-west-delhi",
+            "ac-delhi-hari-nagar-west-delhi",
+            "ac-delhi-tilak-nagar-west-delhi",
+            "ac-delhi-janakpuri-west-delhi",
+            "ac-delhi-vikaspuri-west-delhi",
+            "ac-delhi-uttam-nagar-west-delhi",
+            "ac-delhi-dwarka-west-delhi",
+            "ac-delhi-matiala-west-delhi",
+            "ac-delhi-najafgarh-west-delhi",
+            "ac-delhi-bijwasan-south-delhi",
+            "ac-delhi-palam-south-delhi"
           ]
         },
         {
@@ -970,20 +970,20 @@
           "name": "South and South-West Delhi",
           "constituencyCount": 14,
           "constituencyIds": [
-            "ac-nct-of-delhi-jangpura-east-delhi",
-            "ac-nct-of-delhi-kasturba-nagar-new-delhi",
-            "ac-nct-of-delhi-malviya-nagar-new-delhi",
-            "ac-nct-of-delhi-r-k-puram-new-delhi",
-            "ac-nct-of-delhi-mehrauli-south-delhi",
-            "ac-nct-of-delhi-chhatarpur-south-delhi",
-            "ac-nct-of-delhi-deoli-south-delhi",
-            "ac-nct-of-delhi-ambedkar-nagar-south-delhi",
-            "ac-nct-of-delhi-sangam-vihar-south-delhi",
-            "ac-nct-of-delhi-greater-kailash-new-delhi",
-            "ac-nct-of-delhi-kalkaji-south-delhi",
-            "ac-nct-of-delhi-tughlakabad-south-delhi",
-            "ac-nct-of-delhi-badarpur-south-delhi",
-            "ac-nct-of-delhi-okhla-east-delhi"
+            "ac-delhi-jangpura-east-delhi",
+            "ac-delhi-kasturba-nagar-new-delhi",
+            "ac-delhi-malviya-nagar-new-delhi",
+            "ac-delhi-r-k-puram-new-delhi",
+            "ac-delhi-mehrauli-south-delhi",
+            "ac-delhi-chhatarpur-south-delhi",
+            "ac-delhi-deoli-south-delhi",
+            "ac-delhi-ambedkar-nagar-south-delhi",
+            "ac-delhi-sangam-vihar-south-delhi",
+            "ac-delhi-greater-kailash-new-delhi",
+            "ac-delhi-kalkaji-south-delhi",
+            "ac-delhi-tughlakabad-south-delhi",
+            "ac-delhi-badarpur-south-delhi",
+            "ac-delhi-okhla-east-delhi"
           ]
         },
         {
@@ -991,16 +991,16 @@
           "name": "East Delhi",
           "constituencyCount": 10,
           "constituencyIds": [
-            "ac-nct-of-delhi-trilokpuri-east-delhi",
-            "ac-nct-of-delhi-kondli-east-delhi",
-            "ac-nct-of-delhi-patparganj-east-delhi",
-            "ac-nct-of-delhi-laxmi-nagar-east-delhi",
-            "ac-nct-of-delhi-vishwas-nagar-east-delhi",
-            "ac-nct-of-delhi-krishna-nagar-east-delhi",
-            "ac-nct-of-delhi-gandhi-nagar-east-delhi",
-            "ac-nct-of-delhi-shahdara-east-delhi",
-            "ac-nct-of-delhi-seema-puri-north-east-delhi",
-            "ac-nct-of-delhi-rohtas-nagar-north-east-delhi"
+            "ac-delhi-trilokpuri-east-delhi",
+            "ac-delhi-kondli-east-delhi",
+            "ac-delhi-patparganj-east-delhi",
+            "ac-delhi-laxmi-nagar-east-delhi",
+            "ac-delhi-vishwas-nagar-east-delhi",
+            "ac-delhi-krishna-nagar-east-delhi",
+            "ac-delhi-gandhi-nagar-east-delhi",
+            "ac-delhi-shahdara-east-delhi",
+            "ac-delhi-seema-puri-north-east-delhi",
+            "ac-delhi-rohtas-nagar-north-east-delhi"
           ]
         },
         {
@@ -1008,12 +1008,12 @@
           "name": "North-East Delhi",
           "constituencyCount": 6,
           "constituencyIds": [
-            "ac-nct-of-delhi-seelampur-north-east-delhi",
-            "ac-nct-of-delhi-ghonda-north-east-delhi",
-            "ac-nct-of-delhi-babarpur-north-east-delhi",
-            "ac-nct-of-delhi-gokalpur-north-east-delhi",
-            "ac-nct-of-delhi-mustafabad-north-east-delhi",
-            "ac-nct-of-delhi-karawal-nagar-north-east-delhi"
+            "ac-delhi-seelampur-north-east-delhi",
+            "ac-delhi-ghonda-north-east-delhi",
+            "ac-delhi-babarpur-north-east-delhi",
+            "ac-delhi-gokalpur-north-east-delhi",
+            "ac-delhi-mustafabad-north-east-delhi",
+            "ac-delhi-karawal-nagar-north-east-delhi"
           ]
         }
       ]

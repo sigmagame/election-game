@@ -112,15 +112,15 @@
           ]
         },
         {
-          "name": "NCT OF Delhi",
+          "name": "DELHI",
           "constituencyIds": [
-            "pc-nct-of-delhi-chandni-chowk",
-            "pc-nct-of-delhi-east-delhi",
-            "pc-nct-of-delhi-new-delhi",
-            "pc-nct-of-delhi-north-east-delhi",
-            "pc-nct-of-delhi-north-west-delhi",
-            "pc-nct-of-delhi-south-delhi",
-            "pc-nct-of-delhi-west-delhi"
+            "pc-delhi-chandni-chowk",
+            "pc-delhi-east-delhi",
+            "pc-delhi-new-delhi",
+            "pc-delhi-north-east-delhi",
+            "pc-delhi-north-west-delhi",
+            "pc-delhi-south-delhi",
+            "pc-delhi-west-delhi"
           ]
         }
       ]
