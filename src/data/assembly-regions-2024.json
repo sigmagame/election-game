@@ -4121,7 +4121,7 @@
             "ac-telangana-andole-zahirabad",
             "ac-telangana-narsapur-medak",
             "ac-telangana-zaheerabad-zahirabad",
-            "ac-telangana-sangareddy-medak",           
+            "ac-telangana-sangareddy-medak",
             "ac-telangana-dubbak-medak",
             "ac-telangana-gajwel-medak",
             "ac-telangana-tandur-chevella",
@@ -4162,7 +4162,7 @@
             "ac-telangana-secunderabad-cantt-malkajgiri",
             "ac-telangana-shadnagar-mahbubnagar"
           ],
-          "constituencyCount": 29
+          "constituencyCount": 28
         },
         {
           "id": "southern-telangana",
@@ -4195,7 +4195,7 @@
             "ac-telangana-thungathurthi-sc-bhongir",
             "ac-telangana-alair-bhongir"
           ],
-          "constituencyCount": 27
+          "constituencyCount": 26
         },
         {
           "id": "eastern-telangana",
